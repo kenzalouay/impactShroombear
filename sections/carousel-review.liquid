@@ -1,0 +1,169 @@
+{% stylesheet %}
+.image-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.review-card {
+  width: 280px;
+  min-width: 280px;
+  margin: 0 12px;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.review-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.review-content {
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2) 70%, transparent);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.review-author {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.review-stars {
+  color: #FFD700;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.review-text {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Empêche le zoom et débordement sur mobile */
+@media screen and (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    touch-action: manipulation;
+  }
+}
+{% endstylesheet %}
+
+<div class="image-carousel" style="background-color: {{ section.settings.bg_color }};">
+  <div class="carousel-inner" style="animation-duration: {{ section.settings.scroll_speed | default: 40 }}s; animation-name: scroll; animation-timing-function: linear; animation-iteration-count: infinite;">
+    
+    {% for block in section.blocks %}
+      <div class="review-card">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="Avis client">
+        {% endif %}
+        <div class="review-content">
+          <div class="review-title">{{ block.settings.title }}</div>
+          <div class="review-author">👤 {{ block.settings.author }}</div>
+          <div class="review-stars">★★★★★ <span style="color:#fff">Verified Purchase</span></div>
+          <div class="review-text">{{ block.settings.text }}</div>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% comment %} Duplication pour scroll infini fluide {% endcomment %}
+    {% for block in section.blocks %}
+      <div class="review-card">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="Avis client duplicate">
+        {% endif %}
+        <div class="review-content">
+          <div class="review-title">{{ block.settings.title }}</div>
+          <div class="review-author">👤 {{ block.settings.author }}</div>
+          <div class="review-stars">★★★★★ <span style="color:#fff">Verified Purchase</span></div>
+          <div class="review-text">{{ block.settings.text }}</div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Carrousel d'avis clients",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Couleur de fond",
+      "default": "#F6EFE7"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "label": "Vitesse de défilement (secondes)",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis client",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image de l'avis"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre de l'avis"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Nom du client"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Contenu de l'avis"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Carrousel d'avis",
+      "category": "Témoignages"
+    }
+  ]
+}
+{% endschema %}
