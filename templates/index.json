@@ -317,6 +317,27 @@
         "text_color": ""
       }
     },
+    "carousel_review_KczUqG": {
+      "type": "carousel-review",
+      "blocks": {
+        "review_CdQCYG": {
+          "type": "review",
+          "settings": {
+            "title": "aaarrr",
+            "author": "fffd",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_CdQCYG"
+      ],
+      "name": "Carrousel d'avis",
+      "settings": {
+        "bg_color": "#F6EFE7",
+        "scroll_speed": 40
+      }
+    },
     "faq_4g3hAf": {
       "type": "faq",
       "blocks": {
@@ -378,6 +399,7 @@
     "multi_column_GHkUL4",
     "featured_product_mBhMJ9",
     "rich_text_Yxx3EF",
+    "carousel_review_KczUqG",
     "faq_4g3hAf"
   ]
 }
