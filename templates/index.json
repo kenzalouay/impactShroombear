@@ -254,79 +254,19 @@
         "title_9maNRJ": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
-        "badges_BNd39G": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_6VNfnN": {
-          "type": "price",
+        "text_BynA6W": {
+          "type": "text",
           "settings": {
-            "show_taxes_notice": false
+            "text": "<p><em>\"Avant Nutrops, j'avais le cerveau dans le brouillard dès 14h... Maintenant je cartonne mes présentations même en fin de journée ! \"</em></p><p><strong>Sophie L., 29 ans - Chef de projet</strong></p>"
           }
-        },
-        "rating_GQPnH4": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_fQ8RH6": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_a3UaUL": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
-        "variant_picker_6XK4FP": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_gVBAxe": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_aNbRaK": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "pickup_availability_hAz8A6": {
-          "type": "pickup_availability",
-          "settings": {}
         }
       },
       "block_order": [
         "title_9maNRJ",
-        "badges_BNd39G",
-        "price_6VNfnN",
-        "rating_GQPnH4",
-        "separator_fQ8RH6",
-        "description_a3UaUL",
-        "variant_picker_6XK4FP",
-        "quantity_selector_gVBAxe",
-        "buy_buttons_aNbRaK",
-        "pickup_availability_hAz8A6"
+        "text_BynA6W"
       ],
       "name": "Featured product",
       "settings": {
