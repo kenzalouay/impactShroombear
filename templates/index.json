@@ -217,9 +217,9 @@
           "settings": {
             "image": "shopify://shop_images/9.png",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Amanda K, 38ans",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>Franchement, j'avais peur du goût 'champignon' mais c'est juste citronné ! Mes enfants me demandent même si ils peuvent en avoir tellement ça ressemble à des bonbons.</em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
