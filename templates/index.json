@@ -294,12 +294,6 @@
     "rich_text_Yxx3EF": {
       "type": "rich-text",
       "blocks": {
-        "subheading_RQnMQT": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_3FRawD": {
           "type": "heading",
           "settings": {
@@ -308,18 +302,10 @@
             "text_color": "",
             "gradient": ""
           }
-        },
-        "richtext_cwYHBN": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
         }
       },
       "block_order": [
-        "subheading_RQnMQT",
-        "heading_3FRawD",
-        "richtext_cwYHBN"
+        "heading_3FRawD"
       ],
       "name": "Rich text",
       "settings": {
