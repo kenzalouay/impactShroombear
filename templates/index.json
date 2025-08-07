@@ -191,9 +191,9 @@
           "settings": {
             "image": "shopify://shop_images/10.png",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Sophie T, 32 ans",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>J'étais super sceptique... Mais au bout de 10 jours, fini le crash de 15h ! Je tiens toute la journée sans café supplémentaire. Mon homme a même remarqué que j'étais moins stressé le soir.</em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -204,9 +204,9 @@
           "settings": {
             "image": "shopify://shop_images/1_c66b2f62-42fe-4e39-8e57-ca48b4312f95.png",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Marie L, 34 ans",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>Au début j'ai trouvé le prix élevé mais en fait ça remplace mes 3 compléments habituels : vitamine B, café au champignon et magnésium. Au final j'économise 40€/mois et c'est bien plus pratique !</em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
