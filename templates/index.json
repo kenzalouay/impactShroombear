@@ -185,7 +185,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Ils nous ont fait confiance",
+        "title": "Des résultats concret",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -195,10 +195,6 @@
     "featured_product_mBhMJ9": {
       "type": "featured-product",
       "blocks": {
-        "vendor_TV4fiC": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title_9maNRJ": {
           "type": "title",
           "settings": {
@@ -265,7 +261,6 @@
         }
       },
       "block_order": [
-        "vendor_TV4fiC",
         "title_9maNRJ",
         "badges_BNd39G",
         "price_6VNfnN",
@@ -295,6 +290,46 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "rich_text_Yxx3EF": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_RQnMQT": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_3FRawD": {
+          "type": "heading",
+          "settings": {
+            "text": "section naturopahte",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cwYHBN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RQnMQT",
+        "heading_3FRawD",
+        "richtext_cwYHBN"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -302,6 +337,7 @@
     "logo_list_PjawWP",
     "image_with_text_overlay_iYKJ8k",
     "multi_column_GHkUL4",
-    "featured_product_mBhMJ9"
+    "featured_product_mBhMJ9",
+    "rich_text_Yxx3EF"
   ]
 }
