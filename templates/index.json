@@ -48,6 +48,7 @@
         "logo_DjpHLx": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/1.png",
             "logo_width": 120,
             "link": ""
           }
@@ -55,6 +56,7 @@
         "logo_LLK44c": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/4.png",
             "logo_width": 120,
             "link": ""
           }
@@ -62,6 +64,7 @@
         "logo_4LmDeJ": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/2.png",
             "logo_width": 120,
             "link": ""
           }
@@ -69,6 +72,7 @@
         "logo_JDMdXz": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/3.png",
             "logo_width": 120,
             "link": ""
           }
