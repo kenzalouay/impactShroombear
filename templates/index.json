@@ -268,12 +268,26 @@
           "settings": {
             "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Rating Widget</title>\n    <style>\n        body.unique-body-123 {\n            font-family: Arial, sans-serif;\n        }\n\n        .rating-widget-123 {\n            display: flex;\n            align-items: center;\n        }\n\n        .profile-images-123 {\n            display: flex;\n            align-items: center;\n            margin-right: 20px; /* Resimlerden uzaklaştırmak için artırıldı */\n        }\n\n        .profile-images-123 img {\n            width: 30px;\n            height: 30px;\n            border-radius: 50%;\n            margin-right: -10px;\n            border: 2px solid white;\n        }\n\n        .rating-123 {\n            display: flex;\n            align-items: center;\n        }\n\n        .rating-text-123 {\n            font-size: 14px; /* Font boyutu küçültüldü */\n        }\n\n        .highlight-123 {\n            color: #28A745; /* Green color for highlights */\n            font-weight: bold;\n        }\n    </style>\n</head>\n<body class=\"unique-body-123\">\n\n    <div class=\"rating-widget-123\">\n        <div class=\"profile-images-123\">\n            <img src=\"https://randomuser.me/api/portraits/men/1.jpg\" alt=\"Profile 1\">\n            <img src=\"https://randomuser.me/api/portraits/women/1.jpg\" alt=\"Profile 2\">\n            <img src=\"https://randomuser.me/api/portraits/men/2.jpg\" alt=\"Profile 3\">\n        </div>\n        <div class=\"rating-123\">\n            <span class=\"rating-text-123\">Noté <span class=\"highlight-123\">4.8/5</span> par plus de  <span class=\"highlight-123\">+1300 Français</span></span>\n        </div>\n    </div>\n\n</body>\n</html>"
           }
+        },
+        "text_Q6ym8x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>katching bundle</p>"
+          }
+        },
+        "liquid_Erft6C": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n        .cls-xj7hJ9K {\n            display: flex;\n            align-items: center;\n            font-family: Arial, sans-serif;\n            color: #D9534F; /* Daha yumuşak kırmızı tonu */\n        }\n\n        .icon-xj7hJ9K {\n            margin-right: 8px;\n            color: #D9534F; /* Daha yumuşak kırmızı tonu */\n            width: 8px; /* Genişlik ayarı */\n            height: 8px; /* Yükseklik ayarı */\n            animation: blink-xj7hJ9K 1s infinite, wave-glow-xj7hJ9K 2s infinite;\n        }\n\n        @keyframes blink-xj7hJ9K {\n            0%, 100% {\n                opacity: 1;\n            }\n            50% {\n                opacity: 0.2;\n            }\n        }\n\n        @keyframes wave-glow-xj7hJ9K {\n            0% {\n                text-shadow: 0 0 5px #D9534F;\n            }\n            25% {\n                text-shadow: 0 0 10px #D9534F;\n            }\n            50% {\n                text-shadow: 0 0 15px #D9534F;\n            }\n            75% {\n                text-shadow: 0 0 10px #D9534F;\n            }\n            100% {\n                text-shadow: 0 0 5px #D9534F;\n            }\n        }\n    </style>\n</head>\n<body class=\"body-xj7hJ9K\">\n    <div class=\"cls-xj7hJ9K\">\n        <!-- SVGRepo'dan alınan daire ikonu -->\n        <svg class=\"icon-xj7hJ9K\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\">\n            <circle cx=\"8\" cy=\"8\" r=\"8\" />\n        </svg>\n        <span>Plus que 6 cure en Stock </span>\n    </div>\n</body>\n</html>"
+          }
         }
       },
       "block_order": [
         "title_9maNRJ",
         "text_BynA6W",
-        "liquid_NdtrNN"
+        "liquid_NdtrNN",
+        "text_Q6ym8x",
+        "liquid_Erft6C"
       ],
       "name": "Featured product",
       "settings": {
