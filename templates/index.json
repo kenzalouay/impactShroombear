@@ -36,7 +36,7 @@
         "image": "shopify://shop_images/banner_mobile_5830323c-04e9-4dc1-8a7f-45cf81ca7695.png",
         "mobile_image": "shopify://shop_images/banner_mobile_5830323c-04e9-4dc1-8a7f-45cf81ca7695.png",
         "mobile_text_position": "place-self-end-start text-start",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#944390",
         "overlay_opacity": 0
@@ -150,6 +150,7 @@
         "item_UKytmd": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/8.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -162,6 +163,7 @@
         "item_cnapQi": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/7.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -174,6 +176,7 @@
         "item_y8kKzc": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/2_bf38c40d-5dc1-4185-9297-edca1daccdb7.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -186,6 +189,7 @@
         "item_JeRzwm": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/10.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -198,6 +202,7 @@
         "item_bxJAtV": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/1_c66b2f62-42fe-4e39-8e57-ca48b4312f95.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -210,6 +215,7 @@
         "item_crCizM": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/9.png",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
