@@ -11,18 +11,34 @@
   "sections": {
     "image_with_text_overlay_B4tMyx": {
       "type": "image-with-text-overlay",
+      "blocks": {
+        "button_nEJ4LW": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Acheter Maintenant",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_nEJ4LW"
+      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/banner_mobile.png",
-        "mobile_image": "shopify://shop_images/banner_mobile.png",
-        "mobile_text_position": "place-self-center text-center",
+        "image": "shopify://shop_images/banner_mobile_5830323c-04e9-4dc1-8a7f-45cf81ca7695.png",
+        "mobile_image": "shopify://shop_images/banner_mobile_5830323c-04e9-4dc1-8a7f-45cf81ca7695.png",
+        "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#000000",
+        "overlay_color": "#944390",
         "overlay_opacity": 0
       }
     },
