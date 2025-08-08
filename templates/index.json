@@ -316,6 +316,36 @@
             "content": "<p>Prenez 8 gummies délicieusement fruités chaque matin avec votre petit-déjeuner pour démarrer la journée avec une énergie naturelle. Vous pouvez aussi les répartir : 4 le matin pour l'éveil cognitif, 4 l'après-midi pour éviter le crash de 15h. Chaque sachet individuel se glisse facilement dans votre poche ou sac - parfait pour vos journées chargées !</p>",
             "page": ""
           }
+        },
+        "collapsible_text_UzWBFW": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Combien de temps durent les effets ?",
+            "content": "<p>Les premiers signes d'amélioration se ressentent dès 2-3 jours : clarté mentale, énergie plus stable. Mais la vraie magie opère entre 1-2 semaines quand votre corps s'adapte pleinement aux champignons. Les effets durent toute la journée (8-10h) sans crash ni dépendance, contrairement au café. Beaucoup de nos clients nous disent \"je ne peux plus m'en passer\" après un mois !</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_wjUDm6": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Peut-on prendre Shroombear avec d'autres compléments ?",
+            "content": "<p>Absolument ! Shroombear s'associe parfaitement avec vos vitamines, probiotiques ou oméga-3. Nos 6 champignons adaptogènes travaillent en synergie avec votre corps sans interférer. Évitez simplement de les prendre en même temps que des excitants forts (pré-workout) pour ne pas masquer leur action naturelle et progressive.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_UhxjYj": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Y a-t-il des effets secondaires ?",
+            "content": "<p>Nos gummies sont 100% naturels et sans effets secondaires indésirables ! Contrairement aux stimulants synthétiques, vous n'aurez ni nervosité, ni crash, ni troubles du sommeil. Quelques personnes peuvent ressentir un léger boost d'énergie les premiers jours - c'est normal, votre corps s'adapte. Si vous êtes enceinte ou sous traitement médical, consultez votre médecin par précaution.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -327,7 +357,10 @@
         "image_WGKz6M",
         "button_kXmQGn",
         "liquid_eLfNHw",
-        "collapsible_text_mpgNcJ"
+        "collapsible_text_mpgNcJ",
+        "collapsible_text_UzWBFW",
+        "collapsible_text_wjUDm6",
+        "collapsible_text_UhxjYj"
       ],
       "name": "Featured product",
       "settings": {
