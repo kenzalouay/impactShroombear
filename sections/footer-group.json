@@ -93,8 +93,8 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "title": "Inscrivez-vous à notre newletters",
+            "content": "<p>Inscrivez vous afin de profiter d'offre exclusive toute l'année</p>"
           }
         },
         "links": {
@@ -108,8 +108,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "",
+            "content": "<h4>Nous contactez:</h4><h5>Service client: </h5><p>contact@shroombear.com</p><p></p><h5><strong>Horaire: </strong></h5><p>Du Lundi au Vendredi de 9h à 18h / Samedi et Dimanche de 10h à 14h</p>",
             "enable_follow_on_shop": true
           }
         }
