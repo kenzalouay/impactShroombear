@@ -696,17 +696,33 @@
             "content": "<p>Prenez 8 gummies par jour, de préférence le matin avec votre petit-déjeuner. Vous pouvez les répartir : 4 le matin + 4 l'après-midi. Chaque sachet se transporte facilement !</p>"
           }
         },
+        "item_nWYpdF": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le goût ?",
+            "content": "<p>Nos gummies ont un délicieux goût fruité naturel, sans aucune amertume de champignon ! C'est votre \"petit plaisir santé\" du matin, fini les poudres amères.</p>"
+          }
+        },
+        "item_ULxjxY": {
+          "type": "item",
+          "settings": {
+            "title": "Y a-t-il des effets secondaires ?",
+            "content": "<p>Shroombear est 100% naturel et très bien toléré. Pas d'effets secondaires comme avec la caféine (nervosité, crash). Si vous êtes enceinte ou sous traitement, consultez votre médecin.</p>"
+          }
+        },
         "item_qhtDxF": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Pourquoi ce prix ?",
+            "content": "<p>Nos 10 000mg de champignons concentrés représentent 3x la puissance des produits classiques. Corps fructifères bio + double extraction = qualité premium justifiée !</p>"
           }
         }
       },
       "block_order": [
         "item_8a6PUt",
         "item_nTtrdQ",
+        "item_nWYpdF",
+        "item_ULxjxY",
         "item_qhtDxF"
       ],
       "name": "FAQ",
