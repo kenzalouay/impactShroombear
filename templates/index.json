@@ -356,6 +356,16 @@
             "content": "<p>Chaque dose contient 10 000mg de champignons bio ultra-concentrés (ratio 10:1) : Lion's Mane pour la mémoire, Cordyceps pour l'énergie, Reishi pour la sérénité, Chaga pour l'immunité, Maitake pour la digestion, Coriolus pour le métabolisme. Édulcoré naturellement, sans gluten, vegan, sans OGM. Fabriqué selon les standards pharmaceutiques les plus stricts pour une pureté maximale.</p>",
             "page": ""
           }
+        },
+        "collapsible_text_UT4eWL": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Garantie d'authenticité et qualité",
+            "content": "<p>Nous ne faisons aucun compromis sur la qualité ! Nos champignons proviennent exclusivement de corps fructifères (pas de mycélium bon marché), certifiés bio et testés en laboratoire indépendant. Double extraction eau/alcool pour une biodisponibilité optimale. Chaque lot est tracé et analysé. Garantie satisfait ou remboursé 30 jours - vous ne risquez rien à essayer !</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -371,7 +381,8 @@
         "collapsible_text_UzWBFW",
         "collapsible_text_wjUDm6",
         "collapsible_text_UhxjYj",
-        "collapsible_text_wCNBV3"
+        "collapsible_text_wCNBV3",
+        "collapsible_text_UT4eWL"
       ],
       "name": "Featured product",
       "settings": {
