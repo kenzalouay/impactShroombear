@@ -647,6 +647,7 @@
         "slide_Dj6YFC": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/satisfait_ou_rembourser.png",
             "navigation_label": "1953",
             "subheading": "Subheading",
             "title": "Heading",
