@@ -275,6 +275,10 @@
             "text": "<p>katching bundle</p>"
           }
         },
+        "quantity_selector_LTHM97": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "liquid_Erft6C": {
           "type": "liquid",
           "settings": {
@@ -373,6 +377,7 @@
         "text_BynA6W",
         "liquid_NdtrNN",
         "text_Q6ym8x",
+        "quantity_selector_LTHM97",
         "liquid_Erft6C",
         "image_WGKz6M",
         "button_kXmQGn",
