@@ -685,15 +685,15 @@
         "item_8a6PUt": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Combien de temps avant de voir les effets ?",
+            "content": "<p>La plupart de nos clients ressentent une amélioration dès 2-3 jours (énergie plus stable). Les vrais bénéfices se déploient entre 1-2 semaines d'utilisation régulière. Chaque organisme est unique !</p>"
           }
         },
         "item_nTtrdQ": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "Comment et quand prendre Shroombear ?",
+            "content": "<p>Prenez 8 gummies par jour, de préférence le matin avec votre petit-déjeuner. Vous pouvez les répartir : 4 le matin + 4 l'après-midi. Chaque sachet se transporte facilement !</p>"
           }
         },
         "item_qhtDxF": {
@@ -714,7 +714,7 @@
         "full_width": true,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "content": "",
         "team_avatar_width": 160,
         "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
         "answer_time": "Average answer time: 24h",
