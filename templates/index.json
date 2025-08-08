@@ -536,9 +536,10 @@
             "vertical_position": 70,
             "horizontal_position_mobile": 24,
             "vertical_position_mobile": 70,
+            "icon": "shopify://shop_images/imgi_81_Chaga.png",
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.</p>"
+            "title": "Chaga",
+            "content": "<h3><strong>Le Protecteur Antioxydant</strong></h3><p><em>Protège vos cellules du stress quotidien.</em></p>"
           }
         },
         "item_brdn7w": {
@@ -548,9 +549,10 @@
             "vertical_position": 14,
             "horizontal_position_mobile": 62,
             "vertical_position_mobile": 14,
+            "icon": "shopify://shop_images/imgi_80_Cordyceps.png",
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.</p>"
+            "title": "Cordyceps",
+            "content": "<h3><strong>Le Champion d'Endurance</strong></h3><p><em>Boostez votre énergie naturelle pour conquérir votre journée.</em></p>"
           }
         },
         "item_J4ckHg": {
@@ -560,9 +562,10 @@
             "vertical_position": 75,
             "horizontal_position_mobile": 83,
             "vertical_position_mobile": 75,
+            "icon": "shopify://shop_images/imgi_79_Lion_s_Mane.png",
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.</p>"
+            "title": "Crinière de Lion (Lion's Mane)",
+            "content": "<h3><strong>Le Booster Cérébral</strong></h3><p><em>Restez concentré et performant où que vous soyez.</em></p>"
           }
         },
         "item_KDQQnr": {
