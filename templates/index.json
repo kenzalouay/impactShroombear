@@ -403,27 +403,26 @@
         "input_text_color": ""
       }
     },
-    "rich_text_Yxx3EF": {
-      "type": "rich-text",
+    "timeline_chr7df": {
+      "type": "timeline",
       "blocks": {
-        "heading_3FRawD": {
-          "type": "heading",
+        "slide_z6L7Ag": {
+          "type": "slide",
           "settings": {
-            "text": "section naturopahte",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
+            "image": "shopify://shop_images/dr-sophie.jpg",
+            "navigation_label": "",
+            "subheading": "Dr. Marie Dubois, Naturopathe à propos de Shroombear",
+            "title": "",
+            "content": "<p>Je recommande régulièrement les champignons adaptogènes à mes patients épuisés par le rythme moderne. Shroombear offre une concentration exceptionnelle de 10 000mg par dose dans un format pratique que mes patients n'oublient jamais. J'observe des améliorations significatives sur la fatigue mentale et la résistance au stress dès la deuxième semaine.</p>"
           }
         }
       },
       "block_order": [
-        "heading_3FRawD"
+        "slide_z6L7Ag"
       ],
-      "name": "Rich text",
+      "name": "Timeline",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -573,7 +572,7 @@
     "image_with_text_overlay_iYKJ8k",
     "multi_column_GHkUL4",
     "featured_product_mBhMJ9",
-    "rich_text_Yxx3EF",
+    "timeline_chr7df",
     "slideshow_aX7jA8",
     "carousel_review_KczUqG",
     "faq_4g3hAf"
