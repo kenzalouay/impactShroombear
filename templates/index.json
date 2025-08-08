@@ -274,7 +274,7 @@
           "settings": {
             "product": "{{section.settings.product}}",
             "use_app_block_wording": false,
-            "widget_label": "Purchase options",
+            "widget_label": "",
             "one_time_purchase_text": "One-Time Purchase",
             "subscription_text": "Subscribe and save",
             "delivery_frequency_text": "Delivery frequency",
