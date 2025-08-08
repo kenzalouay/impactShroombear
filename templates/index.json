@@ -431,38 +431,24 @@
     "rich_text_wKeyqC": {
       "type": "rich-text",
       "blocks": {
-        "subheading_gp7Vxb": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_xTeyAF": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
+            "text": "Déjà adopté par +1350 Français",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
           }
-        },
-        "richtext_Gew3qC": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
         }
       },
       "block_order": [
-        "subheading_gp7Vxb",
-        "heading_xTeyAF",
-        "richtext_Gew3qC"
+        "heading_xTeyAF"
       ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "content_width": "medium",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": ""
