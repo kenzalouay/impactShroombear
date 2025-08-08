@@ -633,12 +633,36 @@
         "overlay_text_color": "#ffffff",
         "overlay_button_background": "",
         "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#803cee",
-        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_dot_background": "#462c45",
+        "hot_spot_dot_text_color": "#462c45",
         "hot_spot_content_background": "#ffffff",
         "hot_spot_content_text_color": "#000000",
         "hot_spot_content_opacity": 90,
         "hot_spot_content_blur_radius": 3
+      }
+    },
+    "timeline_efCPpy": {
+      "type": "timeline",
+      "blocks": {
+        "slide_Dj6YFC": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1953",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Dj6YFC"
+      ],
+      "name": "Timeline",
+      "settings": {
+        "full_width": false,
+        "background": "#9a579a",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "faq_4g3hAf": {
@@ -706,6 +730,7 @@
     "rich_text_wKeyqC",
     "carousel_review_KczUqG",
     "hot_spots_mtmD7B",
+    "timeline_efCPpy",
     "faq_4g3hAf"
   ]
 }
