@@ -447,8 +447,8 @@
     },
     "checkout": {
       "order_summary": {
-        "free_shipping_discount_label": "Livraison et Assurance PREMIUM ",
-        "shipping_label": "Offert"
+        "free_shipping_discount_label": "OFFERT",
+        "shipping_label": "Livraison et Assurance PREMIUM "
       }
     }
   }
