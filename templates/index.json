@@ -275,12 +275,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "text_Q6ym8x": {
-          "type": "text",
-          "settings": {
-            "text": "<p>katching bundle</p>"
-          }
-        },
         "quantity_selector_LTHM97": {
           "type": "quantity_selector",
           "settings": {}
@@ -383,7 +377,6 @@
         "text_BynA6W",
         "liquid_NdtrNN",
         "kaching_bundles_app_block_pAaLGc",
-        "text_Q6ym8x",
         "quantity_selector_LTHM97",
         "liquid_Erft6C",
         "image_WGKz6M",
