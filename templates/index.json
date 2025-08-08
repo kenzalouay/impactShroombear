@@ -346,6 +346,16 @@
             "content": "<p>Nos gummies sont 100% naturels et sans effets secondaires indésirables ! Contrairement aux stimulants synthétiques, vous n'aurez ni nervosité, ni crash, ni troubles du sommeil. Quelques personnes peuvent ressentir un léger boost d'énergie les premiers jours - c'est normal, votre corps s'adapte. Si vous êtes enceinte ou sous traitement médical, consultez votre médecin par précaution.</p>",
             "page": ""
           }
+        },
+        "collapsible_text_wCNBV3": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Ingrédients",
+            "content": "<p>Chaque dose contient 10 000mg de champignons bio ultra-concentrés (ratio 10:1) : Lion's Mane pour la mémoire, Cordyceps pour l'énergie, Reishi pour la sérénité, Chaga pour l'immunité, Maitake pour la digestion, Coriolus pour le métabolisme. Édulcoré naturellement, sans gluten, vegan, sans OGM. Fabriqué selon les standards pharmaceutiques les plus stricts pour une pureté maximale.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -360,7 +370,8 @@
         "collapsible_text_mpgNcJ",
         "collapsible_text_UzWBFW",
         "collapsible_text_wjUDm6",
-        "collapsible_text_UhxjYj"
+        "collapsible_text_UhxjYj",
+        "collapsible_text_wCNBV3"
       ],
       "name": "Featured product",
       "settings": {
