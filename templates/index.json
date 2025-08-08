@@ -428,82 +428,60 @@
         "text_color": ""
       }
     },
-    "slideshow_aX7jA8": {
-      "type": "slideshow",
-      "blocks": {
-        "image_Y4KXy8": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your storynn",
-            "title": "Slide 1",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_8bEQnh": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 2",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_Y4KXy8",
-        "image_8bEQnh"
-      ],
-      "name": "Slideshow",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": true,
-        "show_initial_transition": false,
-        "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": ""
-      }
-    },
     "carousel_review_KczUqG": {
       "type": "carousel-review",
       "blocks": {
         "review_CdQCYG": {
           "type": "review",
           "settings": {
-            "title": "aaarrr",
-            "author": "fffd",
+            "image": "shopify://shop_images/11.png",
+            "title": "",
+            "author": "Léa K., 33 ans - Blogueuse lifestyle",
+            "text": "En tant que végane, je suis ultra-exigeante sur la compo. Shroombear coche toutes les cases : bio, concentré, sans additifs. Et ça marche vraiment !"
+          }
+        },
+        "review_dQ8hgz": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "title": "",
+            "author": "Ambrine T.,27 ans - Coach Sportif",
+            "text": "Mes entraînements crossfit ont un autre niveau depuis que je prends Shroombear. Endurance +++ et récupération de fou. 100% naturel, 100% efficace !"
+          }
+        },
+        "review_PnaTjT": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "title": "",
+            "author": "David D. 26 ans - Étudiant",
+            "text": "Révisions 10h/jour pour médecine = mission impossible avant. Avec Shroombear je tiens le rythme et je retiens mieux. Ça change la vie !"
+          }
+        },
+        "review_PQHwN4": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "title": "",
+            "author": "Julie R., 35 ans- Entrepeneure",
+            "text": "Entre boulot et 3 enfants, j'étais épuisée à 16h. Maintenant je gère tout avec le sourire jusqu'au coucher. Mon mari est bluffé !"
+          }
+        },
+        "review_UXTAx4": {
+          "type": "review",
+          "settings": {
+            "title": "",
+            "author": "",
             "text": ""
           }
         }
       },
       "block_order": [
-        "review_CdQCYG"
+        "review_CdQCYG",
+        "review_dQ8hgz",
+        "review_PnaTjT",
+        "review_PQHwN4",
+        "review_UXTAx4"
       ],
       "name": "Carrousel d'avis",
       "settings": {
@@ -573,7 +551,6 @@
     "multi_column_GHkUL4",
     "featured_product_mBhMJ9",
     "timeline_chr7df",
-    "slideshow_aX7jA8",
     "carousel_review_KczUqG",
     "faq_4g3hAf"
   ]
