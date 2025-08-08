@@ -470,9 +470,18 @@
         "review_UXTAx4": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/13.png",
             "title": "",
-            "author": "",
-            "text": ""
+            "author": "Jess P.., 37 ans- Commerciale",
+            "text": "J'ai remplacé mes 4 cafés quotidiens par Shroombear. Même énergie mais sans stress ni tremblements. Ma cardio dit que c'est bien mieux pour mon cœur !"
+          }
+        },
+        "review_f3pBB7": {
+          "type": "review",
+          "settings": {
+            "title": "",
+            "author": "31 ans - Avocate",
+            "text": "Fini le brouillard mental ! Depuis Shroombear, je gère mes dossiers complexes sans fatigue. Mes collègues me demandent mon secret"
           }
         }
       },
@@ -481,7 +490,8 @@
         "review_dQ8hgz",
         "review_PnaTjT",
         "review_PQHwN4",
-        "review_UXTAx4"
+        "review_UXTAx4",
+        "review_f3pBB7"
       ],
       "name": "Carrousel d'avis",
       "settings": {
