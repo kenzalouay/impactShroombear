@@ -613,6 +613,7 @@
         "item_B96F6d",
         "item_x4YYRw"
       ],
+      "disabled": true,
       "name": "Hot spots",
       "settings": {
         "full_width": true,
