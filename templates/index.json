@@ -297,9 +297,9 @@
         "image_WGKz6M": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/badge_confiance_250_x_100_px_1500_x_500_px_500_x_70_px.png",
+            "image": "shopify://shop_images/badge_confiance.png",
             "alignment": "center",
-            "max_width": 500
+            "max_width": 410
           }
         },
         "collapsible_text_mpgNcJ": {
