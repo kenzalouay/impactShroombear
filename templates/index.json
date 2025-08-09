@@ -11,22 +11,6 @@
   "sections": {
     "image_with_text_overlay_B4tMyx": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "button_nEJ4LW": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Acheter Maintenant",
-            "url": "",
-            "background": "",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_nEJ4LW"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
