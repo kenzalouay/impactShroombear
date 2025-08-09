@@ -256,8 +256,9 @@
         "image_prTzXj": {
           "type": "image",
           "settings": {
-            "alignment": "start",
-            "max_width": 150
+            "image": "shopify://shop_images/offre_fin_d_annee.png",
+            "alignment": "center",
+            "max_width": 380
           }
         },
         "kaching_bundles_app_block_pAaLGc": {
