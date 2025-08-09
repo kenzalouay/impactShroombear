@@ -283,9 +283,9 @@
         "image_WGKz6M": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/badge_confiance_250_x_100_px_a11a4d8d-0fa7-4f43-8e93-05f83547cadf.png",
+            "image": "shopify://shop_images/badge_confiance_1500_x_500_px_5decb289-e45d-4063-96a5-dc746cc72d25.png",
             "alignment": "center",
-            "max_width": 170
+            "max_width": 250
           }
         },
         "liquid_eLfNHw": {
