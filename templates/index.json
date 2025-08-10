@@ -85,6 +85,20 @@
         "logo_item_border": ""
       }
     },
+    "custom_liquid_fDKw9M": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- Notification Social Proof Flottante -->\n<div id=\"social-proof-notification\" style=\"\n  position: fixed;\n  bottom: 20px;\n  left: 20px;\n  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);\n  color: white;\n  padding: 12px 20px;\n  border-radius: 50px;\n  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);\n  font-family: 'Arial', sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  z-index: 9999;\n  animation: slideInUp 0.6s ease-out, pulse 2s infinite;\n  cursor: pointer;\n  border: 2px solid rgba(255, 255, 255, 0.3);\n  backdrop-filter: blur(10px);\n  max-width: 320px;\n\">\n  <div style=\"display: flex; align-items: center; gap: 10px;\">\n    <!-- Icône œil clignotant -->\n    <div style=\"\n      width: 12px;\n      height: 12px;\n      background: #00ff88;\n      border-radius: 50%;\n      animation: blink 1.5s infinite;\n    \"></div>\n    \n    <!-- Texte principal -->\n    <span id=\"viewer-text\">\n      🔥 <strong><span id=\"viewer-count\">7</span> personnes</strong> regardent ce produit\n    </span>\n    \n    <!-- Icône fermeture -->\n    <span onclick=\"closeSocialProof()\" style=\"\n      margin-left: auto;\n      font-size: 16px;\n      opacity: 0.7;\n      cursor: pointer;\n      transition: opacity 0.3s;\n    \">×</span>\n  </div>\n</div>\n\n<script>\n// Animation CSS\nconst style = document.createElement('style');\nstyle.textContent = `\n  @keyframes slideInUp {\n    from { transform: translateY(100%); opacity: 0; }\n    to { transform: translateY(0); opacity: 1; }\n  }\n  \n  @keyframes pulse {\n    0%, 100% { transform: scale(1); }\n    50% { transform: scale(1.02); }\n  }\n  \n  @keyframes blink {\n    0%, 100% { opacity: 1; }\n    50% { opacity: 0.3; }\n  }\n  \n  #social-proof-notification:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.5);\n  }\n`;\ndocument.head.appendChild(style);\n\n// Fonction pour générer un nombre aléatoire de viewers\nfunction updateViewerCount() {\n  const minViewers = 12;\n  const maxViewers = 47;\n  const randomCount = Math.floor(Math.random() * (maxViewers - minViewers + 1)) + minViewers;\n  document.getElementById('viewer-count').textContent = randomCount;\n}\n\n// Fonction pour fermer la notification\nfunction closeSocialProof() {\n  const notification = document.getElementById('social-proof-notification');\n  notification.style.animation = 'slideInUp 0.3s ease-in reverse';\n  setTimeout(() => {\n    notification.style.display = 'none';\n  }, 300);\n}\n\n// Messages variés\nconst messages = [\n  '🔥 <strong><span id=\"viewer-count\">{count}</span> personnes</strong> consultent ce produit',\n  '⚡ <strong><span id=\"viewer-count\">{count}</span> clients</strong> viennent de commander',\n  '👀 <strong><span id=\"viewer-count\">{count}</span> personnes</strong> regardent cette offre',\n  '🚨 <strong><span id=\"viewer-count\">{count}</span> packs</strong> vendus aujourd\\'hui'\n];\n\n// Fonction pour changer le message\nfunction updateMessage() {\n  const randomMessage = messages[Math.floor(Math.random() * messages.length)];\n  const currentCount = document.getElementById('viewer-count').textContent;\n  document.getElementById('viewer-text').innerHTML = randomMessage.replace('{count}', currentCount);\n}\n\n// Mise à jour périodique\nsetInterval(() => {\n  updateViewerCount();\n  updateMessage();\n}, 8000);\n\n// Initialisation\nupdateViewerCount();\n\n// Masquer automatiquement après 30 secondes\nsetTimeout(() => {\n  const notification = document.getElementById('social-proof-notification');\n  if (notification.style.display !== 'none') {\n    notification.style.opacity = '0.7';\n  }\n}, 30000);\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_axiea4": {
       "type": "rich-text",
       "blocks": {
@@ -750,6 +764,7 @@
   "order": [
     "image_with_text_overlay_B4tMyx",
     "logo_list_PjawWP",
+    "custom_liquid_fDKw9M",
     "rich_text_axiea4",
     "image_with_text_overlay_iYKJ8k",
     "multi_column_GHkUL4",
