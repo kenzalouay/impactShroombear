@@ -659,7 +659,7 @@
         "slide_Dj6YFC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/satisfait_ou_rembourse_3.png",
+            "image": "shopify://shop_images/image_produit_800_x_800_px_3a25025f-8a93-4e39-8f3d-061f97535226.png",
             "navigation_label": "",
             "subheading": "",
             "title": "",
@@ -673,7 +673,7 @@
       "name": "Timeline",
       "settings": {
         "full_width": false,
-        "background": "#eaf6f5",
+        "background": "#deccd5",
         "background_gradient": "",
         "text_color": ""
       }
