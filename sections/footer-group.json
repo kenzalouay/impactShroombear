@@ -109,7 +109,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "content": "<h4>Nous contactez:</h4><h5>Service client: </h5><p>contact@shroombear.com</p><p></p><h5><strong>Horaire: </strong></h5><p>Du Lundi au Vendredi de 9h à 18h / Samedi et Dimanche de 10h à 14h</p>",
+            "content": "<h4>Nous contactez:</h4><h5>Service client: </h5><p>contact@shroom-bear.com</p><p></p><h5><strong>Horaire: </strong></h5><p>Du Lundi au Vendredi de 9h à 18h / Samedi et Dimanche de 10h à 14h</p>",
             "enable_follow_on_shop": true
           }
         }
