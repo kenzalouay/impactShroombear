@@ -236,10 +236,10 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Une journée sans faille,  un mental sans nuage.",
+        "title": "Focus validé",
         "content": "",
         "background": "",
         "background_gradient": "",
