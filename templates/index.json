@@ -269,6 +269,7 @@
         },
         "image_prTzXj": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/STOP_AU_STRESS_DE_FIN_D_ANNEE.png",
             "alignment": "center",
