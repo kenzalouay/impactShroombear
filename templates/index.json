@@ -105,7 +105,7 @@
         "heading_rHTVGU": {
           "type": "heading",
           "settings": {
-            "text": "La puissance naturelle de 6 champignons bio pour écraser la fatigue mentale",
+            "text": "Puissance mentale, zéro crash",
             "heading_tag": "h5",
             "text_color": "",
             "gradient": ""
@@ -133,8 +133,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/6_benefices_62c206cc-9bf2-48d4-a659-d10d69ff83f2.png",
-        "mobile_image": "shopify://shop_images/6_benefices_62c206cc-9bf2-48d4-a659-d10d69ff83f2.png",
+        "image": "shopify://shop_images/6_benefices_4ca6a951-7fef-4882-bf6b-04828a5900c9.png",
+        "mobile_image": "shopify://shop_images/6_benefices_4ca6a951-7fef-4882-bf6b-04828a5900c9.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
