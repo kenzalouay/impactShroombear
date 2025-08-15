@@ -28,6 +28,13 @@
             "url": ""
           }
         },
+        "message_kBfEiw": {
+          "type": "message",
+          "settings": {
+            "text": "Paiement 100% Sécurisé",
+            "url": ""
+          }
+        },
         "message_hEzXgN": {
           "type": "message",
           "settings": {
@@ -39,6 +46,7 @@
       "block_order": [
         "message",
         "message_DQxtHQ",
+        "message_kBfEiw",
         "message_hEzXgN"
       ],
       "settings": {
