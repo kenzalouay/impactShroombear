@@ -145,6 +145,45 @@
     "multi_column_GHkUL4": {
       "type": "multi-column",
       "blocks": {
+        "item_NrMnVH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "column_size": "3",
+            "title": "Julien M, 35 ans",
+            "heading_tag": "h4",
+            "content": "<p>J’avais peur de perdre le coup de boost du café… mais avec Shroombear, c’est encore mieux : je suis focus et détendue toute la journée.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_y36zyB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "column_size": "3",
+            "title": "Léa K, 42 ans",
+            "heading_tag": "h4",
+            "content": "<p>Je pensais que c’était juste un gadget… mais au bout d’une semaine, plus de brouillard mental, je tiens jusqu’au soir sans m’en rendre compte.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_imXdCG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/13.png",
+            "column_size": "3",
+            "title": "Laura P, 32 ans",
+            "heading_tag": "h4",
+            "content": "<p>Le format est top, j’en glisse dans mon sac et c’est mon petit rituel avant les réunions importantes. Zéro stress, 100% concentration !</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_UKytmd": {
           "type": "item",
           "settings": {
@@ -153,6 +192,19 @@
             "title": "Camille B, 26 ans",
             "heading_tag": "h4",
             "content": "<p>Dès le 2ᵉ jour, plus d’énergie. Au bout d’une semaine, je pouvais enfin rester concentrée toute la journée, sans coup de mou. Et le soir… je dors comme un bébé.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_eKBBcd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "column_size": "3",
+            "title": "Clara M, 28ans",
+            "heading_tag": "h4",
+            "content": "<p>Avec Shroombear, je termine mes séances aussi forte que je les commence. Plus d’énergie stable, plus de focus… et zéro coup de mou.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -225,7 +277,11 @@
         }
       },
       "block_order": [
+        "item_NrMnVH",
+        "item_y36zyB",
+        "item_imXdCG",
         "item_UKytmd",
+        "item_eKBBcd",
         "item_cnapQi",
         "item_y8kKzc",
         "item_JeRzwm",
