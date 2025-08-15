@@ -37,18 +37,10 @@
             "link": ""
           }
         },
-        "logo_LLK44c": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/4.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
         "logo_4LmDeJ": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/logo_confiance.png",
+            "logo": "shopify://shop_images/logo_confiance_b0e27963-6a74-4de4-89db-4b665f975301.png",
             "logo_width": 120,
             "link": ""
           }
@@ -60,13 +52,21 @@
             "logo_width": 120,
             "link": ""
           }
+        },
+        "logo_LLK44c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/4.png",
+            "logo_width": 120,
+            "link": ""
+          }
         }
       },
       "block_order": [
         "logo_DjpHLx",
-        "logo_LLK44c",
         "logo_4LmDeJ",
-        "logo_JDMdXz"
+        "logo_JDMdXz",
+        "logo_LLK44c"
       ],
       "name": "Logo list",
       "settings": {
