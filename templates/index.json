@@ -324,10 +324,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "quantity_selector_LTHM97": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "liquid_Erft6C": {
           "type": "liquid",
           "settings": {
@@ -426,7 +422,6 @@
         "liquid_NdtrNN",
         "image_prTzXj",
         "kaching_bundles_app_block_pAaLGc",
-        "quantity_selector_LTHM97",
         "liquid_Erft6C",
         "buy_buttons_F74Ekj",
         "liquid_eLfNHw",
