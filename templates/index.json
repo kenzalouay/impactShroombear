@@ -85,20 +85,6 @@
         "logo_item_border": ""
       }
     },
-    "custom_liquid_fDKw9M": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<!-- Notification Social Proof Flottante -->\n<div id=\"social-proof-notification\" style=\"\n  position: fixed;\n  bottom: 20px;\n  left: 20px;\n  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);\n  color: white;\n  padding: 12px 20px;\n  border-radius: 50px;\n  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);\n  font-family: 'Arial', sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  z-index: 9999;\n  animation: slideInUp 0.6s ease-out, pulse 2s infinite;\n  cursor: pointer;\n  border: 2px solid rgba(255, 255, 255, 0.3);\n  backdrop-filter: blur(10px);\n  max-width: 320px;\n\">\n  <div style=\"display: flex; align-items: center; gap: 10px;\">\n    <!-- Icône œil clignotant -->\n    <div style=\"\n      width: 12px;\n      height: 12px;\n      background: #00ff88;\n      border-radius: 50%;\n      animation: blink 1.5s infinite;\n    \"></div>\n    \n    <!-- Texte principal -->\n    <span id=\"viewer-text\">\n      🔥 <strong><span id=\"viewer-count\">7</span> personnes</strong> regardent ce produit\n    </span>\n    \n    <!-- Icône fermeture -->\n    <span onclick=\"closeSocialProof()\" style=\"\n      margin-left: auto;\n      font-size: 16px;\n      opacity: 0.7;\n      cursor: pointer;\n      transition: opacity 0.3s;\n    \">×</span>\n  </div>\n</div>\n\n<script>\n// Animation CSS\nconst style = document.createElement('style');\nstyle.textContent = `\n  @keyframes slideInUp {\n    from { transform: translateY(100%); opacity: 0; }\n    to { transform: translateY(0); opacity: 1; }\n  }\n  \n  @keyframes pulse {\n    0%, 100% { transform: scale(1); }\n    50% { transform: scale(1.02); }\n  }\n  \n  @keyframes blink {\n    0%, 100% { opacity: 1; }\n    50% { opacity: 0.3; }\n  }\n  \n  #social-proof-notification:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.5);\n  }\n`;\ndocument.head.appendChild(style);\n\n// Fonction pour générer un nombre aléatoire de viewers\nfunction updateViewerCount() {\n  const minViewers = 12;\n  const maxViewers = 47;\n  const randomCount = Math.floor(Math.random() * (maxViewers - minViewers + 1)) + minViewers;\n  document.getElementById('viewer-count').textContent = randomCount;\n}\n\n// Fonction pour fermer la notification\nfunction closeSocialProof() {\n  const notification = document.getElementById('social-proof-notification');\n  notification.style.animation = 'slideInUp 0.3s ease-in reverse';\n  setTimeout(() => {\n    notification.style.display = 'none';\n  }, 300);\n}\n\n// Messages variés\nconst messages = [\n  '🔥 <strong><span id=\"viewer-count\">{count}</span> personnes</strong> consultent ce produit',\n  '⚡ <strong><span id=\"viewer-count\">{count}</span> clients</strong> viennent de commander',\n  '👀 <strong><span id=\"viewer-count\">{count}</span> personnes</strong> regardent cette offre',\n  '🚨 <strong><span id=\"viewer-count\">{count}</span> packs</strong> vendus aujourd\\'hui'\n];\n\n// Fonction pour changer le message\nfunction updateMessage() {\n  const randomMessage = messages[Math.floor(Math.random() * messages.length)];\n  const currentCount = document.getElementById('viewer-count').textContent;\n  document.getElementById('viewer-text').innerHTML = randomMessage.replace('{count}', currentCount);\n}\n\n// Mise à jour périodique\nsetInterval(() => {\n  updateViewerCount();\n  updateMessage();\n}, 8000);\n\n// Initialisation\nupdateViewerCount();\n\n// Masquer automatiquement après 30 secondes\nsetTimeout(() => {\n  const notification = document.getElementById('social-proof-notification');\n  if (notification.style.display !== 'none') {\n    notification.style.opacity = '0.7';\n  }\n}, 30000);\n</script>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_axiea4": {
       "type": "rich-text",
       "blocks": {
@@ -496,222 +482,6 @@
         "text_color": ""
       }
     },
-    "rich_text_wKeyqC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_xTeyAF": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Déjà adopté par +25000 Français",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_xTeyAF"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "medium",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "carousel_review_KczUqG": {
-      "type": "carousel-review",
-      "blocks": {
-        "review_CdQCYG": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/11.png",
-            "title": "",
-            "author": "Léa K., 33 ans - Blogueuse lifestyle",
-            "text": "En tant que végane, je suis ultra-exigeante sur la compo. Shroombear coche toutes les cases : bio, concentré, sans additifs. Et ça marche vraiment !"
-          }
-        },
-        "review_dQ8hgz": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/12.png",
-            "title": "",
-            "author": "Ambrine T.,27 ans - Coach Sportif",
-            "text": "Mes entraînements crossfit ont un autre niveau depuis que je prends Shroombear. Endurance +++ et récupération de fou. 100% naturel, 100% efficace !"
-          }
-        },
-        "review_PnaTjT": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/15.png",
-            "title": "",
-            "author": "David D. 26 ans - Étudiant",
-            "text": "Révisions 10h/jour pour médecine = mission impossible avant. Avec Shroombear je tiens le rythme et je retiens mieux. Ça change la vie !"
-          }
-        },
-        "review_PQHwN4": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "title": "",
-            "author": "Julie R., 35 ans- Entrepeneure",
-            "text": "Entre boulot et 3 enfants, j'étais épuisée à 16h. Maintenant je gère tout avec le sourire jusqu'au coucher. Mon mari est bluffé !"
-          }
-        },
-        "review_UXTAx4": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/13.png",
-            "title": "",
-            "author": "Jess P., 37 ans- Commerciale",
-            "text": "J'ai remplacé mes 4 cafés quotidiens par Shroombear. Même énergie mais sans stress ni tremblements. Ma cardio dit que c'est bien mieux pour mon cœur !"
-          }
-        },
-        "review_f3pBB7": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/16.png",
-            "title": "",
-            "author": "31 ans - Avocate",
-            "text": "Fini le brouillard mental ! Depuis Shroombear, je gère mes dossiers complexes sans fatigue. Mes collègues me demandent mon secret"
-          }
-        }
-      },
-      "block_order": [
-        "review_CdQCYG",
-        "review_dQ8hgz",
-        "review_PnaTjT",
-        "review_PQHwN4",
-        "review_UXTAx4",
-        "review_f3pBB7"
-      ],
-      "disabled": true,
-      "name": "Carrousel d'avis",
-      "settings": {
-        "bg_color": "#f6efe7",
-        "scroll_speed": 40
-      }
-    },
-    "hot_spots_mtmD7B": {
-      "type": "hot-spots",
-      "blocks": {
-        "item_jtcACX": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 24,
-            "vertical_position": 70,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
-            "icon": "shopify://shop_images/imgi_81_Chaga.png",
-            "icon_width": 32,
-            "title": "Chaga",
-            "content": "<h3><strong>Le Protecteur Antioxydant</strong></h3><p><em>Protège vos cellules du stress quotidien.</em></p>"
-          }
-        },
-        "item_brdn7w": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 62,
-            "vertical_position": 14,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
-            "icon": "shopify://shop_images/imgi_80_Cordyceps.png",
-            "icon_width": 32,
-            "title": "Cordyceps",
-            "content": "<h3><strong>Le Champion d'Endurance</strong></h3><p><em>Boostez votre énergie naturelle pour conquérir votre journée.</em></p>"
-          }
-        },
-        "item_J4ckHg": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
-            "icon": "shopify://shop_images/imgi_79_Lion_s_Mane.png",
-            "icon_width": 32,
-            "title": "Crinière de Lion (Lion's Mane)",
-            "content": "<h3><strong>Le Booster Cérébral</strong></h3><p><em>Restez concentré et performant où que vous soyez.</em></p>"
-          }
-        },
-        "item_KDQQnr": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
-            "icon": "shopify://shop_images/imgi_78_Reishi.png",
-            "icon_width": 32,
-            "title": "Reishi",
-            "content": "<h2><strong>L'Apaisant Anti-Stress</strong></h2><p><em>Gardez votre calme et votre sérénité en toutes circonstances.</em></p>"
-          }
-        },
-        "item_B96F6d": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
-            "icon": "shopify://shop_images/imgi_77_Coriolus.png",
-            "icon_width": 32,
-            "title": "Coriolus",
-            "content": "<h3><strong>Le Gardien Intestinal</strong></h3><p><em>Équilibrez votre digestion pour vous sentir au top.</em></p>"
-          }
-        },
-        "item_x4YYRw": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
-            "icon": "shopify://shop_images/imgi_76_Maitake.png",
-            "icon_width": 32,
-            "title": "Maitake",
-            "content": "<h2><strong>Le Guerrier Immunitaire</strong></h2><p><em>Renforcez vos défenses naturelles de l'intérieur.</em></p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_jtcACX",
-        "item_brdn7w",
-        "item_J4ckHg",
-        "item_KDQQnr",
-        "item_B96F6d",
-        "item_x4YYRw"
-      ],
-      "disabled": true,
-      "name": "Hot spots",
-      "settings": {
-        "full_width": true,
-        "image": "shopify://shop_images/Hot_spots.png",
-        "mobile_image": "shopify://shop_images/Hot_spots.png",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#ffffff",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#462c45",
-        "hot_spot_dot_text_color": "#462c45",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 90,
-        "hot_spot_content_blur_radius": 3
-      }
-    },
     "timeline_efCPpy": {
       "type": "timeline",
       "blocks": {
@@ -823,15 +593,11 @@
   "order": [
     "image_with_text_overlay_B4tMyx",
     "logo_list_PjawWP",
-    "custom_liquid_fDKw9M",
     "rich_text_axiea4",
     "image_with_text_overlay_iYKJ8k",
     "multi_column_GHkUL4",
     "featured_product_mBhMJ9",
     "timeline_chr7df",
-    "rich_text_wKeyqC",
-    "carousel_review_KczUqG",
-    "hot_spots_mtmD7B",
     "timeline_efCPpy",
     "custom_liquid_gJMTE8",
     "faq_4g3hAf"
