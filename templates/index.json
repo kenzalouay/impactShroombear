@@ -325,10 +325,10 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "liquid_Erft6C": {
+        "liquid_HPnzNL": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n        .cls-xj7hJ9K {\n            display: flex;\n            align-items: center;\n            font-family: Arial, sans-serif;\n            color: #D90429; /* Daha yumuşak kırmızı tonu */\n        }\n\n        .icon-xj7hJ9K {\n            margin-right: 8px;\n            color: #D90429; /* Daha yumuşak kırmızı tonu */\n            width: 8px; /* Genişlik ayarı */\n            height: 8px; /* Yükseklik ayarı */\n            animation: blink-xj7hJ9K 1s infinite, wave-glow-xj7hJ9K 2s infinite;\n        }\n\n        @keyframes blink-xj7hJ9K {\n            0%, 100% {\n                opacity: 1;\n            }\n            50% {\n                opacity: 0.2;\n            }\n        }\n\n        @keyframes wave-glow-xj7hJ9K {\n            0% {\n                text-shadow: 0 0 5px #D9534F;\n            }\n            25% {\n                text-shadow: 0 0 10px #D9534F;\n            }\n            50% {\n                text-shadow: 0 0 15px #D9534F;\n            }\n            75% {\n                text-shadow: 0 0 10px #D9534F;\n            }\n            100% {\n                text-shadow: 0 0 5px #D9534F;\n            }\n        }\n    </style>\n</head>\n<body class=\"body-xj7hJ9K\">\n    <div class=\"cls-xj7hJ9K\">\n        <!-- SVGRepo'dan alınan daire ikonu -->\n        <svg class=\"icon-xj7hJ9K\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\">\n            <circle cx=\"8\" cy=\"8\" r=\"8\" />\n        </svg>\n        <span> Attention : rupture fréquente – plus que 6 paquets disponibles</span>\n    </div>\n</body>\n</html>"
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <style>\n    .cls-xj7hJ9K{\n      display:flex;\n      align-items:flex-start;   /* ⟵ aligne en haut (1ère ligne) */\n      font-family:Arial, sans-serif;\n      color:#D90429;\n      line-height:1.3;          /* optionnel : rend l’alignement plus net */\n    }\n\n    .icon-xj7hJ9K{\n      margin-right:8px;\n      color:#D90429;\n      width:8px;\n      height:8px;\n      /* force l’icône à se caler sur le haut du bloc texte */\n      align-self:flex-start;    /* ⟵ au cas où un style parent écrase align-items */\n      margin-top:0.2em;         /* petit réglage fin vertical, ajuste si besoin */\n      animation:blink-xj7hJ9K 1s infinite, wave-glow-xj7hJ9K 2s infinite;\n    }\n\n    @keyframes blink-xj7hJ9K{\n      0%,100%{opacity:1}\n      50%{opacity:.2}\n    }\n    @keyframes wave-glow-xj7hJ9K{\n      0%{text-shadow:0 0 5px #D9534F}\n      25%{text-shadow:0 0 10px #D9534F}\n      50%{text-shadow:0 0 15px #D9534F}\n      75%{text-shadow:0 0 10px #D9534F}\n      100%{text-shadow:0 0 5px #D9534F}\n    }\n  </style>\n</head>\n<body>\n  <div class=\"cls-xj7hJ9K\">\n    <svg class=\"icon-xj7hJ9K\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" role=\"img\" aria-label=\"alerte\">\n      <circle cx=\"8\" cy=\"8\" r=\"8\"/>\n    </svg>\n    <span>Attention : rupture fréquente – plus que 6 paquets disponibles</span>\n  </div>\n</body>\n</html>"
           }
         },
         "buy_buttons_F74Ekj": {
@@ -423,7 +423,7 @@
         "liquid_NdtrNN",
         "image_prTzXj",
         "kaching_bundles_app_block_pAaLGc",
-        "liquid_Erft6C",
+        "liquid_HPnzNL",
         "buy_buttons_F74Ekj",
         "liquid_eLfNHw",
         "image_WGKz6M",
