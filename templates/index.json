@@ -17,8 +17,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/banner_mobile_00eab14b-0dee-4958-946d-87398225080c.png",
-        "mobile_image": "shopify://shop_images/banner_mobile_00eab14b-0dee-4958-946d-87398225080c.png",
+        "image": "shopify://shop_images/banner_mobile.png",
+        "mobile_image": "shopify://shop_images/banner_mobile.png",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
@@ -32,7 +32,7 @@
         "logo_DjpHLx": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/1_d4d57c85-9ba1-4ab3-bf74-7d04deb1b049.png",
+            "logo": "shopify://shop_images/1_66c8bff3-b7b4-4f24-80da-49c83917a7b7.png",
             "logo_width": 120,
             "link": ""
           }
@@ -40,7 +40,7 @@
         "logo_4LmDeJ": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/logo_confiance_b0e27963-6a74-4de4-89db-4b665f975301.png",
+            "logo": "shopify://shop_images/3_f2cc162e-6a54-48dd-b3aa-83591b89af9c.png",
             "logo_width": 120,
             "link": ""
           }
@@ -48,7 +48,7 @@
         "logo_JDMdXz": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/3_5d7b7216-6e96-44ac-b775-5917d5c0dadb.png",
+            "logo": "shopify://shop_images/4_da58415a-2444-43e7-bf6e-a8f4a0f374d4.png",
             "logo_width": 120,
             "link": ""
           }
@@ -56,7 +56,7 @@
         "logo_LLK44c": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/4.png",
+            "logo": "shopify://shop_images/5_208fa4f9-53a4-414b-8f83-6ef137b6d592.png",
             "logo_width": 120,
             "link": ""
           }
@@ -119,8 +119,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/6_benefices_555df5b0-0d3e-4b73-99aa-78a2f0a95968.png",
-        "mobile_image": "shopify://shop_images/6_benefices_555df5b0-0d3e-4b73-99aa-78a2f0a95968.png",
+        "image": "shopify://shop_images/6_benefices.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -212,7 +211,6 @@
         "item_y8kKzc": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/2_bf38c40d-5dc1-4185-9297-edca1daccdb7.png",
             "column_size": "3",
             "title": "David R, 31 ans",
             "heading_tag": "h4",
@@ -238,7 +236,6 @@
         "item_bxJAtV": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/1_c66b2f62-42fe-4e39-8e57-ca48b4312f95.png",
             "column_size": "3",
             "title": "Marie L, 34 ans",
             "heading_tag": "h4",
@@ -314,7 +311,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/STOP_AU_STRESS_DE_FIN_D_ANNEE.png",
             "alignment": "center",
             "max_width": 380
           }
@@ -351,7 +347,6 @@
         "image_WGKz6M": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/badge_confiance.png",
             "alignment": "center",
             "max_width": 410
           }
@@ -459,7 +454,6 @@
         "slide_z6L7Ag": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/dr-sophie.jpg",
             "navigation_label": "",
             "subheading": "",
             "title": "",
@@ -484,7 +478,6 @@
         "slide_Dj6YFC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image_produit_800_x_800_px_3a25025f-8a93-4e39-8f3d-061f97535226.png",
             "navigation_label": "",
             "subheading": "",
             "title": "",
