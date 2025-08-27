@@ -211,6 +211,7 @@
         "item_y8kKzc": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/5.png",
             "column_size": "3",
             "title": "David R, 31 ans",
             "heading_tag": "h4",
@@ -236,6 +237,7 @@
         "item_bxJAtV": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/9.png",
             "column_size": "3",
             "title": "Marie L, 34 ans",
             "heading_tag": "h4",
