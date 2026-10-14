@@ -16,7 +16,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "{%- comment -%} ⬇️ TES 4 MESSAGES, séparés par une barre verticale {%- endcomment -%}\n{%- assign messages = \"Livraison offerte dès 49 €|Expédié sous 48 h|Satisfait ou remboursé 30 jours|Paiement sécurisé\" | split: \"|\" -%}\n\n<style>\n  .ann-bar{\n    --ann-bg:#1F1B18;        /* fond de la barre */\n    --ann-fg:#FFFFFF;        /* couleur du texte */\n    --ann-sep:#C4652A;       /* couleur du séparateur */\n    --ann-speed:26s;         /* plus grand = plus lent */\n    background:var(--ann-bg);color:var(--ann-fg);\n    overflow:hidden;padding:11px 0;\n    font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n    /* pleine largeur : supprime ces 2 lignes si une barre de défilement horizontale apparaît */\n    width:100vw;margin-left:calc(50% - 50vw);\n  }\n  .ann-bar *{box-sizing:border-box}\n  .ann-bar .ann-track{display:flex;width:max-content;\n    animation:annScroll var(--ann-speed) linear infinite}\n  .ann-bar:hover .ann-track{animation-play-state:paused}\n  .ann-bar .ann-set{display:flex;align-items:center;gap:26px;padding-right:26px;\n    margin:0;list-style:none}\n  .ann-bar .ann-item{white-space:nowrap;font-size:13.5px;font-weight:600;line-height:1.2;\n    letter-spacing:.01em}\n  .ann-bar .ann-sep{color:var(--ann-sep);font-size:9px;line-height:1}\n\n  @keyframes annScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}\n\n  @media (max-width:749px){\n    .ann-bar{--ann-speed:20s;padding:10px 0}\n    .ann-bar .ann-set{gap:20px;padding-right:20px}\n    .ann-bar .ann-item{font-size:12.5px}\n  }\n  @media (prefers-reduced-motion:reduce){\n    .ann-bar{overflow-x:auto}\n    .ann-bar .ann-track{animation:none}\n  }\n</style>\n\n<div class=\"ann-bar\" role=\"region\" aria-label=\"Annonces\">\n  <div class=\"ann-track\">\n    {%- for pass in (1..2) -%}\n      <ul class=\"ann-set\"{% if forloop.last %} aria-hidden=\"true\"{% endif %}>\n        {%- for message in messages -%}\n          <li class=\"ann-item\">{{ message | strip }}</li>\n          <li class=\"ann-sep\">◆</li>\n        {%- endfor -%}\n      </ul>\n    {%- endfor -%}\n  </div>\n</div>",
+        "liquid": "{%- comment -%} ⬇️ TES 4 MESSAGES, séparés par une barre verticale {%- endcomment -%}\n{%- assign messages = \"🚚 Expédié sous 48 h|🔄 90 jours pour essayer|⭐ 4,8/5 · 1 247 avis|💬 Service client en France\" | split: \"|\" -%}\n\n<style>\n  /* supprime les marges que le theme ajoute autour du bloc */\n  .shopify-section:has(.ann-bar),\n  .shopify-block:has(.ann-bar),\n  .shopify-section:has(.ann-bar) > *{\n    padding-top:0 !important;padding-bottom:0 !important;\n    margin-top:0 !important;margin-bottom:0 !important;\n  }\n\n  .ann-bar{\n    --ann-bg:#FFFFFF;        /* fond de la barre */\n    --ann-fg:#1A1A1A;        /* couleur du texte */\n    --ann-line:#ECE9E3;      /* filets haut et bas */\n    --ann-gap:64px;          /* espace entre les messages */\n    --ann-speed:20s;         /* plus grand = plus lent */\n    background:var(--ann-bg);color:var(--ann-fg);\n    border-top:1px solid var(--ann-line);\n    border-bottom:1px solid var(--ann-line);\n    overflow:hidden;padding:9px 0;\n    font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n    /* pleine largeur : supprime ces 2 lignes si une barre de defilement horizontale apparait */\n    width:100vw;margin-left:calc(50% - 50vw);\n  }\n  .ann-bar *{box-sizing:border-box}\n  .ann-bar .ann-track{display:flex;width:max-content;\n    animation:annScroll var(--ann-speed) linear infinite}\n  .ann-bar:hover .ann-track{animation-play-state:paused}\n  .ann-bar .ann-set{display:flex;align-items:center;gap:var(--ann-gap);\n    padding-right:var(--ann-gap);margin:0;list-style:none}\n  .ann-bar .ann-item{white-space:nowrap;font-size:13.5px;font-weight:600;line-height:1.2}\n\n  /* 4 copies : on decale d'un quart = exactement une liste */\n  @keyframes annScroll{from{transform:translateX(0)}to{transform:translateX(-25%)}}\n\n  @media (max-width:749px){\n    .ann-bar{--ann-gap:40px;--ann-speed:15s;padding:8px 0}\n    .ann-bar .ann-item{font-size:12.5px}\n  }\n  @media (prefers-reduced-motion:reduce){\n    .ann-bar{overflow-x:auto}\n    .ann-bar .ann-track{animation:none}\n  }\n</style>\n\n<div class=\"ann-bar\" role=\"region\" aria-label=\"Annonces\">\n  <div class=\"ann-track\">\n    {%- for pass in (1..4) -%}\n      <ul class=\"ann-set\"{% unless forloop.first %} aria-hidden=\"true\"{% endunless %}>\n        {%- for message in messages -%}\n          <li class=\"ann-item\">{{ message | strip }}</li>\n        {%- endfor -%}\n      </ul>\n    {%- endfor -%}\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -25,10 +25,28 @@
     "featured_product_WrnVwX": {
       "type": "featured-product",
       "blocks": {
+        "liquid_DXmc8W": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .shopify-section:has(.tmt-rating),\n  .shopify-block:has(.tmt-rating){background:transparent !important}\n\n  .tmt-rating{display:inline-flex;align-items:center;gap:6px;background:transparent;\n    font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n    font-size:13.5px;color:#1A1A1A;line-height:1.2}\n  .tmt-rating .tmt-stars{display:inline-flex;gap:1px}\n  .tmt-rating .tmt-stars svg{width:14px;height:14px;display:block}\n  .tmt-rating .tmt-score{font-weight:500}\n  .tmt-rating .tmt-dot{color:#9A958E}\n  .tmt-rating a{color:#1A1A1A;text-decoration:underline;text-underline-offset:2px}\n  .tmt-rating a:hover{text-decoration-thickness:2px}\n</style>\n\n<span class=\"tmt-rating\">\n  <span class=\"tmt-stars\" role=\"img\" aria-label=\"Note de 4,8 sur 5\">\n    <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\">\n      <defs>\n        <linearGradient id=\"tmtStar80\">\n          <stop offset=\"80%\" stop-color=\"#F5A623\"/>\n          <stop offset=\"80%\" stop-color=\"#DCD8D1\"/>\n        </linearGradient>\n      </defs>\n      <path fill=\"#F5A623\" d=\"M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z\"/>\n    </svg>\n    <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path fill=\"#F5A623\" d=\"M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z\"/></svg>\n    <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path fill=\"#F5A623\" d=\"M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z\"/></svg>\n    <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path fill=\"#F5A623\" d=\"M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z\"/></svg>\n    <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path fill=\"url(#tmtStar80)\" d=\"M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z\"/></svg>\n  </span>\n  <span class=\"tmt-score\">4,8</span>\n  <span class=\"tmt-dot\" aria-hidden=\"true\">·</span>\n  <a href=\"#avis\">1 247 avis</a>\n</span>"
+          }
+        },
         "text_FUbhJJ": {
           "type": "text",
           "settings": {
-            "text": "<h1>Fini l'odeur de renfermé <em>après 40 ans.</em></h1>"
+            "text": "<h1>Fini l'odeur de renfermé&nbsp;</h1>"
+          }
+        },
+        "text_zXJbFr": {
+          "type": "text",
+          "settings": {
+            "text": "<h1><em>après 40 ans.</em></h1>"
+          }
+        },
+        "text_HPHUKA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Le savon au vrai kaki fermenté qui l'enlève au lavage.</p>"
           }
         },
         "rating_8DTGyU": {
@@ -54,7 +72,10 @@
         }
       },
       "block_order": [
+        "liquid_DXmc8W",
         "text_FUbhJJ",
+        "text_zXJbFr",
+        "text_HPHUKA",
         "rating_8DTGyU",
         "buy_buttons_NczyQN",
         "pickup_availability_zCPedD"
