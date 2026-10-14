@@ -17,44 +17,20 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Livraison Gratuite à Domicile",
-            "url": ""
-          }
-        },
-        "message_DQxtHQ": {
-          "type": "message",
-          "settings": {
-            "text": "Satisfait ou Remboursé",
-            "url": ""
-          }
-        },
-        "message_kBfEiw": {
-          "type": "message",
-          "settings": {
-            "text": "Paiement 100% Sécurisé",
-            "url": ""
-          }
-        },
-        "message_hEzXgN": {
-          "type": "message",
-          "settings": {
-            "text": "Offre Limitée Rentrée jusqu'à -40%",
+            "text": "🎁 Offre de lancement : 1 savon acheté = 1 offert · Livraison offerte",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message",
-        "message_DQxtHQ",
-        "message_kBfEiw",
-        "message_hEzXgN"
+        "message"
       ],
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
-        "cycle_speed": 6,
+        "cycle_speed": 4,
         "text_size": "text-xs",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 10,
         "background": "#4c2146",
         "background_gradient": "",
@@ -66,7 +42,6 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": true,
-        "logo": "shopify://shop_images/LOGO.png",
         "logo_max_width": 295,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",

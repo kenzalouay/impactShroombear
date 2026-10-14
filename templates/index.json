@@ -9,330 +9,38 @@
  */
 {
   "sections": {
-    "image_with_text_overlay_B4tMyx": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
+    "custom_liquid_F7m4RH": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/banner_mobile.png",
-        "mobile_image": "shopify://shop_images/banner_mobile.png",
-        "mobile_text_position": "place-self-end-start text-start",
-        "desktop_text_position": "sm:place-self-end-start sm:text-start",
-        "text_color": "#ffffff",
-        "overlay_color": "#944390",
-        "overlay_opacity": 0
-      }
-    },
-    "logo_list_PjawWP": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_DjpHLx": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/1_66c8bff3-b7b4-4f24-80da-49c83917a7b7.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_4LmDeJ": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/3_f2cc162e-6a54-48dd-b3aa-83591b89af9c.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_JDMdXz": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/4_da58415a-2444-43e7-bf6e-a8f4a0f374d4.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_LLK44c": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/5_208fa4f9-53a4-414b-8f83-6ef137b6d592.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_DjpHLx",
-        "logo_4LmDeJ",
-        "logo_JDMdXz",
-        "logo_LLK44c"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "Vu sur",
-        "content": "",
-        "text_alignment": "center",
-        "items_per_row": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
-    "rich_text_axiea4": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_rHTVGU": {
-          "type": "heading",
-          "settings": {
-            "text": "Un esprit clair, une énergie stable - du matin au soir.",
-            "heading_tag": "h5",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_rHTVGU"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "{%- comment -%} ⬇️ TES 4 MESSAGES, séparés par une barre verticale {%- endcomment -%}\n{%- assign messages = \"Livraison offerte dès 49 €|Expédié sous 48 h|Satisfait ou remboursé 30 jours|Paiement sécurisé\" | split: \"|\" -%}\n\n<style>\n  .ann-bar{\n    --ann-bg:#1F1B18;        /* fond de la barre */\n    --ann-fg:#FFFFFF;        /* couleur du texte */\n    --ann-sep:#C4652A;       /* couleur du séparateur */\n    --ann-speed:26s;         /* plus grand = plus lent */\n    background:var(--ann-bg);color:var(--ann-fg);\n    overflow:hidden;padding:11px 0;\n    font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n    /* pleine largeur : supprime ces 2 lignes si une barre de défilement horizontale apparaît */\n    width:100vw;margin-left:calc(50% - 50vw);\n  }\n  .ann-bar *{box-sizing:border-box}\n  .ann-bar .ann-track{display:flex;width:max-content;\n    animation:annScroll var(--ann-speed) linear infinite}\n  .ann-bar:hover .ann-track{animation-play-state:paused}\n  .ann-bar .ann-set{display:flex;align-items:center;gap:26px;padding-right:26px;\n    margin:0;list-style:none}\n  .ann-bar .ann-item{white-space:nowrap;font-size:13.5px;font-weight:600;line-height:1.2;\n    letter-spacing:.01em}\n  .ann-bar .ann-sep{color:var(--ann-sep);font-size:9px;line-height:1}\n\n  @keyframes annScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}\n\n  @media (max-width:749px){\n    .ann-bar{--ann-speed:20s;padding:10px 0}\n    .ann-bar .ann-set{gap:20px;padding-right:20px}\n    .ann-bar .ann-item{font-size:12.5px}\n  }\n  @media (prefers-reduced-motion:reduce){\n    .ann-bar{overflow-x:auto}\n    .ann-bar .ann-track{animation:none}\n  }\n</style>\n\n<div class=\"ann-bar\" role=\"region\" aria-label=\"Annonces\">\n  <div class=\"ann-track\">\n    {%- for pass in (1..2) -%}\n      <ul class=\"ann-set\"{% if forloop.last %} aria-hidden=\"true\"{% endif %}>\n        {%- for message in messages -%}\n          <li class=\"ann-item\">{{ message | strip }}</li>\n          <li class=\"ann-sep\">◆</li>\n        {%- endfor -%}\n      </ul>\n    {%- endfor -%}\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
       }
     },
-    "image_with_text_overlay_iYKJ8k": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/6_benefices.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "multi_column_GHkUL4": {
-      "type": "multi-column",
-      "blocks": {
-        "item_NrMnVH": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/15.png",
-            "column_size": "3",
-            "title": "Julien M, 35 ans",
-            "heading_tag": "h4",
-            "content": "<p>J’avais peur de perdre le coup de boost du café… mais en réalité ShroomBear est mieux : je suis focus, détendu, et je garde mon énergie sans nervosité toute la journée.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_y36zyB": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "column_size": "3",
-            "title": "Léa K, 42 ans",
-            "heading_tag": "h4",
-            "content": "<p>Je pensais que c’était un gadget… mais après une semaine, mon brouillard mental a disparu. Maintenant je termine mes journées sans fatigue, sans m’en rendre compte. Une vraie libération.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_imXdCG": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/13.png",
-            "column_size": "3",
-            "title": "Laura P, 32 ans",
-            "heading_tag": "h4",
-            "content": "<p>ShroomBear est devenu mon rituel avant chaque réunion importante. Je glisse un sachet dans mon sac, zéro stress, 100 % concentration. C’est mon arme secrète pour performer au boulot.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_UKytmd": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/8.png",
-            "column_size": "3",
-            "title": "Camille B, 26 ans",
-            "heading_tag": "h4",
-            "content": "<p>Dès le 2e jour, j’ai senti la différence : plus d’énergie, plus de focus.<br/>Après une semaine, je pouvais enfin rester concentrée toute la journée sans coup de mou. Et le soir… je dors comme un bébé.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_eKBBcd": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/12.png",
-            "column_size": "3",
-            "title": "Clara M, 28ans",
-            "heading_tag": "h4",
-            "content": "<p>Avec ShroomBear, je termine mes séances de sport aussi forte que je les commence. Plus d’énergie, plus de focus, zéro baisse de régime. Même au bureau, je sens que j’ai toujours un cran d’avance.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_cnapQi": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/7.png",
-            "column_size": "3",
-            "title": "Laurent F, 47 ans",
-            "heading_tag": "h4",
-            "content": "<p>J’ai testé plein de produits ‘wellness’ sans résultats. Mais avec 10 000 mg d’extraits concentrés, c’est la première fois que je finis mes journées aussi clair et concentré qu’au matin. Même mon médecin a été bluffé.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_y8kKzc": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/5.png",
-            "column_size": "3",
-            "title": "David R, 31 ans",
-            "heading_tag": "h4",
-            "content": "<p>Avant : coup de barre à 15h, impossible de rester concentré.<br/>Maintenant : avec 4 gummies le matin et 4 l’après-midi, je garde la même énergie qu’au réveil. Plus aucun crash, je finis mes journées productif et serein.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_JeRzwm": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/10.png",
-            "column_size": "3",
-            "title": "Sophie T, 32 ans",
-            "heading_tag": "h4",
-            "content": "<p>J’étais sceptique… mais au bout de 10 jours, fini le crash de 15h !<br/>Je tiens sans café supplémentaire et, cerise sur le gâteau : mon mari m’a dit que j’étais beaucoup plus détendue en fin de journée. ShroomBear, c’est mon secret zen + énergie.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_bxJAtV": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/9.png",
-            "column_size": "3",
-            "title": "Marie L, 34 ans",
-            "heading_tag": "h4",
-            "content": "<p>Au début, je trouvais le prix élevé… mais ça a remplacé mes 3 compléments habituels (vitamine B, magnésium, café au champignon). Résultat : je gagne 40€/mois et surtout je gagne en concentration. Un seul sachet, une énergie stable toute la journée.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_crCizM": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/9.png",
-            "column_size": "3",
-            "title": "Amanda K, 38ans",
-            "heading_tag": "h4",
-            "content": "<p>J’avais peur du goût ‘champignon’, mais c’est juste citronné et super agréable ! Et le mieux : plus de coup de barre l’après-midi. Même mes enfants me demandent si c’est des bonbons… Moi je sais que c’est mon secret pour rester concentrée jusqu’au soir.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_NrMnVH",
-        "item_y36zyB",
-        "item_imXdCG",
-        "item_UKytmd",
-        "item_eKBBcd",
-        "item_cnapQi",
-        "item_y8kKzc",
-        "item_JeRzwm",
-        "item_bxJAtV",
-        "item_crCizM"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Focus et Énergie validé par nos Clients",
-        "content": "<p>Ne nous croyez pas sur parole… écoutez ceux qui l’utilisent au quotidien.</p>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "featured_product_mBhMJ9": {
+    "featured_product_WrnVwX": {
       "type": "featured-product",
       "blocks": {
-        "title_9maNRJ": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h3"
-          }
-        },
-        "text_BynA6W": {
+        "text_FUbhJJ": {
           "type": "text",
           "settings": {
-            "text": "<p><em>\"Avant ShroomBear, j'avais le cerveau dans le brouillard dès 14h... Maintenant je cartonne mes présentations même en fin de journée ! \"</em></p><p><strong>Sophie L., 29 ans - Chef de projet</strong></p>"
+            "text": "<h1>Fini l'odeur de renfermé <em>après 40 ans.</em></h1>"
           }
         },
-        "liquid_NdtrNN": {
-          "type": "liquid",
+        "rating_8DTGyU": {
+          "type": "rating",
           "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Rating Widget</title>\n    <style>\n        body.unique-body-123 {\n            font-family: Arial, sans-serif;\n        }\n\n        .rating-widget-123 {\n            display: flex;\n            align-items: center;\n        }\n\n        .profile-images-123 {\n            display: flex;\n            align-items: center;\n            margin-right: 20px; /* Resimlerden uzaklaştırmak için artırıldı */\n        }\n\n        .profile-images-123 img {\n            width: 30px;\n            height: 30px;\n            border-radius: 50%;\n            margin-right: -10px;\n            border: 2px solid white;\n        }\n\n        .rating-123 {\n            display: flex;\n            align-items: center;\n        }\n\n        .rating-text-123 {\n            font-size: 14px; /* Font boyutu küçültüldü */\n        }\n\n        .highlight-123 {\n            color: #28A745; /* Green color for highlights */\n            font-weight: bold;\n        }\n    </style>\n</head>\n<body class=\"unique-body-123\">\n\n    <div class=\"rating-widget-123\">\n        <div class=\"profile-images-123\">\n            <img src=\"https://randomuser.me/api/portraits/men/1.jpg\" alt=\"Profile 1\">\n            <img src=\"https://randomuser.me/api/portraits/women/1.jpg\" alt=\"Profile 2\">\n            <img src=\"https://randomuser.me/api/portraits/men/2.jpg\" alt=\"Profile 3\">\n        </div>\n        <div class=\"rating-123\">\n            <span class=\"rating-text-123\">Noté <span class=\"highlight-123\">4.8/5</span> par plus de  <span class=\"highlight-123\">+1350 Français</span></span>\n        </div>\n    </div>\n\n</body>\n</html>"
+            "show_empty": false
           }
         },
-        "image_prTzXj": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "alignment": "center",
-            "max_width": 380
-          }
-        },
-        "kaching_bundles_app_block_pAaLGc": {
-          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-          "settings": {
-            "product": "{{section.settings.product}}"
-          }
-        },
-        "liquid_HPnzNL": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <style>\n    .cls-xj7hJ9K{\n      display:flex;\n      align-items:flex-start;   /* ⟵ aligne en haut (1ère ligne) */\n      font-family:Arial, sans-serif;\n      color:#D90429;\n      line-height:1.3;          /* optionnel : rend l’alignement plus net */\n    }\n\n    .icon-xj7hJ9K{\n      margin-right:8px;\n      color:#D90429;\n      width:8px;\n      height:8px;\n      /* force l’icône à se caler sur le haut du bloc texte */\n      align-self:flex-start;    /* ⟵ au cas où un style parent écrase align-items */\n      margin-top:0.2em;         /* petit réglage fin vertical, ajuste si besoin */\n      animation:blink-xj7hJ9K 1s infinite, wave-glow-xj7hJ9K 2s infinite;\n    }\n\n    @keyframes blink-xj7hJ9K{\n      0%,100%{opacity:1}\n      50%{opacity:.2}\n    }\n    @keyframes wave-glow-xj7hJ9K{\n      0%{text-shadow:0 0 5px #D9534F}\n      25%{text-shadow:0 0 10px #D9534F}\n      50%{text-shadow:0 0 15px #D9534F}\n      75%{text-shadow:0 0 10px #D9534F}\n      100%{text-shadow:0 0 5px #D9534F}\n    }\n  </style>\n</head>\n<body>\n  <div class=\"cls-xj7hJ9K\">\n    <svg class=\"icon-xj7hJ9K\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" role=\"img\" aria-label=\"alerte\">\n      <circle cx=\"8\" cy=\"8\" r=\"8\"/>\n    </svg>\n    <span>Attention : rupture fréquente – plus que 6 paquets disponibles</span>\n  </div>\n</body>\n</html>"
-          }
-        },
-        "buy_buttons_F74Ekj": {
+        "buy_buttons_NczyQN": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": false,
+            "show_payment_button": true,
             "show_gift_card_recipient": true,
             "atc_button_background": "",
             "atc_button_text_color": "",
@@ -340,106 +48,25 @@
             "payment_button_text_color": ""
           }
         },
-        "liquid_eLfNHw": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Payment Options</title>\n    <style>\n        body.unique-body-Pay123 {\n            font-family: Arial, sans-serif;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            background-color: #f9f9f9;\n        }\n        .unique-payment-container-Xyz456 {\n            text-align: center;\n        }\n        .unique-payment-options-Abc789 {\n            display: flex;\n            justify-content: center;\n            gap: 10px;\n        }\n        .unique-payment-options-Abc789 img {\n            width: 50px;\n            height: auto;\n        }\n    </style>\n</head>\n<body class=\"unique-body-Pay123\">\n    <div class=\"unique-payment-container-Xyz456\">\n        <div class=\"unique-payment-options-Abc789\">\n            <img src=\"https://www.svgrepo.com/show/14823/amex.svg\" alt=\"AMEX\">\n            <img src=\"https://www.svgrepo.com/show/508402/apple-pay.svg\" alt=\"Apple Pay\">\n            <img src=\"https://www.svgrepo.com/show/508703/mastercard.svg\" alt=\"MasterCard\">\n            <img src=\"https://www.svgrepo.com/show/508716/paypal.svg\" alt=\"PayPal\">\n            <img src=\"https://www.svgrepo.com/show/508690/google-pay.svg\" alt=\"Google Pay\">\n            <img src=\"https://www.svgrepo.com/show/508730/visa-classic.svg\" alt=\"VISA\">\n        </div>\n    </div>\n</body>\n</html>"
-          }
-        },
-        "image_WGKz6M": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/badge_confiance_1500_x_500_px_8e862b2a-a1c1-4f20-8620-df73558a1b54.png",
-            "alignment": "center",
-            "max_width": 500
-          }
-        },
-        "collapsible_text_mpgNcJ": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Comment utiliser Shroombear ?",
-            "content": "<p><em>Simple et flexible.</em>Prenez<strong>8 gummies fruités</strong>au petit-déjeuner pour démarrer la journée avec un boost naturel.</p><p><br/>Astuce : répartissez-les (<strong>4 le matin pour le focus, 4 après-midi pour éviter le crash de 15h</strong>).</p><p><br/>➡ Résultat :<strong>clarté mentale immédiate + énergie qui dure toute la journée</strong>, sans nervosité.</p><p><br/><em>(Chaque sachet individuel se glisse dans votre poche ou sac – parfait pour vos journées chargées).</em></p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_UzWBFW": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Combien de temps durent les effets ?",
-            "content": "<p>➡ Les premiers bénéfices se sentent dès <strong>2-3 jours</strong>: plus de brouillard mental, énergie plus stable.</p><p><br/>Mais la vraie magie apparaît après<strong>1 à 2 semaines</strong>, quand votre corps s’adapte pleinement.</p><p><br/>Chaque prise dure <strong>8-10h</strong>→<strong>pas de crash, pas de dépendance</strong>, contrairement au café.</p><p><br/>C’est pour ça que nos clients disent :<em>“Après 1 mois, je ne peux plus m’en passer !”</em></p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_wjUDm6": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Peut-on prendre Shroombear avec d'autres compléments ?",
-            "content": "<p>✅ Absolument. ShroomBear fonctionne en <strong>synergie </strong>avec vos vitamines, probiotiques ou oméga-3.<br/>⚠️ Évitez simplement de les prendre <strong>en même temps que des excitants forts</strong>(pré-workout, boissons énergétiques), pour ne pas masquer leur action progressive et naturelle.<br/>➡ Résultat : vous <strong>simplifiez votre routine </strong>sans rien sacrifier.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_UhxjYj": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Y a-t-il des effets secondaires ?",
-            "content": "<p> Aucun effet indésirable. Nos gummies sont <strong>100 % naturels, sans caféine, sans sucre ajouté</strong>.<br/>Contrairement au café et aux boissons énergétiques :</p><ul><li>Pas de nervosité</li><li>Pas d’insomnie</li><li> Pas de coup de barre</li></ul><p><br/><strong>Au contraire :</strong> certains ressentent un léger boost les premiers jours → signe que votre corps s’adapte.<br/><em>(Si vous êtes enceinte ou sous traitement médical, demandez l’avis de votre médecin par précaution).</em></p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_wCNBV3": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Ingrédients",
-            "content": "<p>Chaque dose contient <strong>10 000 mg d’extraits ultra-concentrés (10:1)</strong> :</p><ul><li><strong>Lion’s Mane</strong> : mémoire & créativité</li><li><strong>Cordyceps</strong> : énergie durable</li><li><strong>Reishi</strong> : sérénité & récupération</li><li><strong>Chaga</strong> : immunité</li><li><strong>Maitake</strong> : digestion</li><li><strong>Coriolus</strong> : métabolisme</li></ul><p></p><p>Résultat : une formule <strong>complète et puissante</strong>, sans caféine, sans gluten, vegan, sans OGM.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_UT4eWL": {
-          "type": "collapsible_text",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "title": "Garantie d'authenticité et qualité",
-            "content": "<p>Pas de compromis : uniquement des <strong>corps de champignons (fruiting bodies)</strong>→ pas de mycélium bas de gamme.<br/>- Certifiés bio, testés en labo indépendant.<br/>-  Double extraction eau/alcool →<strong>biodisponibilité maximale</strong>.</p><p><br/>➡ Chaque lot est tracé, contrôlé, garanti.<br/></p><p> Vous êtes <strong>satisfait ou remboursé sous 30 jours</strong>. </p><p>Vous ne risquez rien à essayer ShroomBear.</p>",
-            "page": ""
-          }
+        "pickup_availability_zCPedD": {
+          "type": "pickup_availability",
+          "settings": {}
         }
       },
       "block_order": [
-        "title_9maNRJ",
-        "text_BynA6W",
-        "liquid_NdtrNN",
-        "image_prTzXj",
-        "kaching_bundles_app_block_pAaLGc",
-        "liquid_HPnzNL",
-        "buy_buttons_F74Ekj",
-        "liquid_eLfNHw",
-        "image_WGKz6M",
-        "collapsible_text_mpgNcJ",
-        "collapsible_text_UzWBFW",
-        "collapsible_text_wjUDm6",
-        "collapsible_text_UhxjYj",
-        "collapsible_text_wCNBV3",
-        "collapsible_text_UT4eWL"
+        "text_FUbhJJ",
+        "rating_8DTGyU",
+        "buy_buttons_NczyQN",
+        "pickup_availability_zCPedD"
       ],
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "shroom-bear-gummies",
+        "product": "savon",
         "desktop_media_width": 55,
-        "desktop_media_layout": "grid_highlight",
-        "mobile_media_size": "contained",
-        "mobile_carousel_control": "thumbnails",
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -450,150 +77,10 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
-    },
-    "timeline_chr7df": {
-      "type": "timeline",
-      "blocks": {
-        "slide_z6L7Ag": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/dr-sophie.jpg",
-            "navigation_label": "",
-            "subheading": "",
-            "title": "",
-            "content": "<p><strong>Dr. Marie Dubois, Naturopathe à propos de Shroombear</strong></p><p><em>\"Je recommande souvent les champignons adaptogènes à mes patients épuisés par le rythme moderne.<br/>Shroombear, avec ses 10 000 mg concentrés par dose, offre un format pratique qu’on n’oublie jamais.<br/>Dès la 2ᵉ semaine, je vois une nette amélioration du focus, de l’énergie mentale et de la résistance au stress.\"</em></p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_z6L7Ag"
-      ],
-      "name": "Timeline",
-      "settings": {
-        "full_width": true,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "timeline_efCPpy": {
-      "type": "timeline",
-      "blocks": {
-        "slide_Dj6YFC": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/9_e6ab015b-b3a7-4f69-a64e-b5e8fc718d24.png",
-            "navigation_label": "",
-            "subheading": "",
-            "title": "",
-            "content": "<h4><em><strong>Essayez Shroombear en toute confiance avec notre garantie de remboursement de 30 jours!</strong></em></h4><p><em>Les naturopathes, nutritionnistes et nos clients en témoignent : Shroombear offre des une énergie remarquable dès les premières semaines !</em></p><p><strong>Convaincus de l'efficacité de nos gummies aux champignons adaptogènes, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours.</strong></p><p><strong>Si vous n'obtenez pas l'énergie et la concentration promises, nous vous remboursons intégralement.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_Dj6YFC"
-      ],
-      "name": "Timeline",
-      "settings": {
-        "full_width": false,
-        "background": "#deccd5",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_gJMTE8": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Trustpilot Reviews</title>\n    <style>\n        body.FgVdQeK8P7 {\n            font-family: Arial, sans-serif;\n            background-color: #f5fdf5;\n            margin: 0;\n            padding: 0;\n        }\n\n        h1.d3FsH6IqT4 {\n            margin-top: 30px;\n            font-size: 26px;\n            font-weight: bold;\n            color: #333;\n            text-align: center;\n        }\n\n        h1 .AaB2Y5Gp9f {\n            background: linear-gradient(to bottom, #28a745 0%, #d3f9d8 100%);\n            -webkit-background-clip: text;\n            color: transparent;\n        }\n\n        p.RwV2N5Lt0I {\n            margin-top: 5px;\n            font-size: 16px;\n            color: #555;\n            text-align: center;\n        }\n\n        .LaVtZ1Q0xK {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            font-family: Arial, sans-serif;\n            font-size: 14px;\n            color: #333;\n            margin-top: 10px;\n        }\n\n        .KsF9M8H2Ej {\n            display: flex;\n            align-items: center;\n            margin-right: 10px;\n        }\n\n        .KsF9M8H2Ej img {\n            max-width: 100px;\n            width: 100px;\n            height: auto;\n        }\n\n        .jX4N5P7Dr6 {\n            font-weight: normal;\n        }\n\n        .Yk4V8N6Vf1 {\n            font-weight: bold;\n        }\n\n        .zT8B3S1VgD {\n            font-weight: normal;\n            margin-left: 5px;\n        }\n\n        .F0rW6K8yEz {\n            display: flex;\n            flex-wrap: nowrap;\n            gap: 20px;\n            overflow-x: scroll;\n            padding: 20px;\n            margin: 20px auto;\n            width: 90%;\n            box-sizing: border-box;\n        }\n\n        .nQ0V3S1vD7 {\n            background-color: white;\n            border-radius: 8px;\n            padding: 20px;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n            text-align: left;\n            position: relative;\n            border-left: 4px solid #28a745;\n            width: 400px;\n            flex-shrink: 0;\n        }\n\n        .nQ0V3S1vD7 .Fb0W9T8TjZ {\n            font-weight: bold;\n            margin-bottom: 5px;\n            font-size: 14px;\n            color: #333;\n        }\n\n        .nQ0V3S1vD7 .rT9B3G2MdF {\n            font-size: 12px;\n            color: #777;\n            margin-bottom: 15px;\n        }\n\n        .nQ0V3S1vD7 .gP9Z3A2Kn7 {\n            font-size: 14px;\n            color: #555;\n            margin-bottom: 15px;\n            line-height: 1.6;\n        }\n\n        .nQ0V3S1vD7 .Vh3J2R4Nw1 {\n            font-size: 12px;\n            color: #28a745;\n            font-weight: bold;\n        }\n\n        .nQ0V3S1vD7 .Bz5W3F7Wz2 {\n            margin-top: 10px;\n        }\n\n        .Bz5W3F7Wz2 svg {\n            width: 16px;\n            height: 16px;\n            fill: #28a745;\n        }\n\n        .iX7Q3H6Fv4 {\n            font-size: 14px;\n            margin-top: 20px;\n            color: #555;\n            text-align: center;\n        }\n\n        .iX7Q3H6Fv4 span {\n            background-color: #28a745;\n            color: white;\n            padding: 2px 8px;\n            border-radius: 4px;\n        }\n\n        /* Scrollbar styling for horizontal scrolling */\n        .F0rW6K8yEz::-webkit-scrollbar {\n            height: 8px;\n        }\n\n        .F0rW6K8yEz::-webkit-scrollbar-thumb {\n            background-color: #28a745;\n            border-radius: 10px;\n        }\n\n        .F0rW6K8yEz::-webkit-scrollbar-track {\n            background-color: #f5fdf5;\n        }\n\n        /* Green gradient at the bottom with fading upwards */\n        .iX7Q3H6Fv4 {\n            background: linear-gradient(to top, #d3f9d8 0%, #e1f7e0 60%, #f5fdf5 100%);\n            padding: 20px;\n            text-align: center;\n        }\n    </style>\n</head>\n<body class=\"FgVdQeK8P7\">\n\n    <h1 class=\"d3FsH6IqT4\">Votre <span class=\"AaB2Y5Gp9f\">satisfaction</span> est notre priorité</h1>\n    <p class=« RwV2N5Lt0I\">Nous accordons une importance capitale a chacun de vos retours</p>\n\n    <div class=\"LaVtZ1Q0xK\">\n        <div class=\"KsF9M8H2Ej\">\n            <img src=\"https://i.imgur.com/EHjNmTM.png\" alt=\"5 stars\">\n        </div>\n        <div class=\"jX4N5P7Dr6\">\n            Trustscore <span class=\"Yk4V8N6Vf1\">4.8 | 1,397+</span> avis\n        </div>\n    </div>\n\n    <div class=\"F0rW6K8yEz\">\n        <div class=\"nQ0V3S1vD7\">\n            <div class=\"Fb0W9T8TjZ\">Julia M.</div>\n            <div class=« rT9B3G2MdF\">Il y a 3 mois</div>\n            <div class=\"gP9Z3A2Kn7\">\"Maman de 3 enfants + boulot à plein temps = épuisement total. Depuis Shroombear, je gère tout avec le sourire ! Mon mari me demande quel est mon secret 😄 »</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n        <div class=\"nQ0V3S1vD7\">\n            <div class=\"Fb0W9T8TjZ\">Michaela R.</div>\n            <div class=« rT9B3G2MdF\">Il y a 2h </div>\n            <div class=\"gP9Z3A2Kn7\">\"J'ai remplacé mes 4 expressos par Shroombear. Même boost mais sans stress ni tremblements. Ma cardio approuve et moi aussi ! Format sachet parfait pour les déplacements. »</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis Vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n        <div class=\"nQ0V3S1vD7\">\n            <div class=\"Fb0W9T8TjZ\">Anissa T.</div>\n            <div class=« rT9B3G2MdF »>Il y a 1 mois</div>\n            <div class=\"gP9Z3A2Kn7\">\"Parfait pour mes révisions de médecine ! Je peux étudier 8h sans perdre ma concentration. Mes parents n'en reviennent pas de me voir aussi motivée. Livraison ultra-rapide en plus. »</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n        <!-- New review cards -->\n        <div class=\"nQ0V3S1vD7\">\n            <div class=« Fb0W9T8TjZ\">Thomas M.</div>\n            <div class=« rT9B3G2MdF\">Il y a 2 semaines</div>\n            <div class=\"gP9Z3A2Kn7\">\"Sceptique au début mais bluffé par les résultats ! Fini les coups de barre de 15h, je tiens toute la journée avec une énergie stable. Le goût est top, rien à voir avec les poudres amères que j'ai testées avant.\"</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n <!-- New review cards -->\n        <div class=\"nQ0V3S1vD7\">\n            <div class=« Fb0W9T8TjZ »>Alexandre D.</div>\n            <div class=« rT9B3G2MdF\">Il y a 2 mois</div>\n            <div class=\"gP9Z3A2Kn7\">\"En tant que coach sportif, j'ai testé plein de compléments. Shroombear me donne une énergie propre sans crash. Mes clients remarquent la différence dans mes cours !\"</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n <!-- New review cards -->\n        <div class=\"nQ0V3S1vD7\">\n            <div class=« Fb0W9T8TjZ »>Camille B.</div>\n            <div class=« rT9B3G2MdF\">Il y a 4 semaines</div>\n            <div class=\"gP9Z3A2Kn7\">\"Vegan et très exigeante sur la compo. Shroombear coche toutes mes cases : bio, sans additifs, concentré. Et l'effet sur ma concentration au travail est dingue !.\"</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n\n <!-- New review cards -->\n        <div class=\"nQ0V3S1vD7\">\n            <div class=« Fb0W9T8TjZ »>Laurent F..</div>\n            <div class=« rT9B3G2MdF\">Il y a 4 mois</div>\n            <div class=\"gP9Z3A2Kn7\">\"J'étais fatigué des effets de mode wellness bidon. Là c'est du sérieux : 10 000mg de vrais extraits ! Mon médecin était même curieux de voir la composition. Efficacité au rendez-vous.\"</div>\n            <div class=\"Vh3J2R4Nw1\">✔ Avis vérifié</div>\n            <div class=\"Bz5W3F7Wz2\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431L24 9.748l-6 5.832 1.42 8.271L12 18.896l-7.42 4.955L6 15.58l-6-5.832 8.332-1.73z\"/></svg>\n            </div>\n        </div>\n    </div>\n\n    <div class=« iX7Q3H6Fv4\">Basé sur  <span>1397</span> avis vérifiés</div>\n\n</body>\n</html>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "faq_4g3hAf": {
-      "type": "faq",
-      "blocks": {
-        "item_8a6PUt": {
-          "type": "item",
-          "settings": {
-            "title": "Combien de temps avant de voir les effets ?",
-            "content": "<p>La plupart de nos clients ressentent une amélioration dès 2-3 jours (énergie plus stable). Les vrais bénéfices se déploient entre 1-2 semaines d'utilisation régulière. Chaque organisme est unique !</p>"
-          }
-        },
-        "item_nTtrdQ": {
-          "type": "item",
-          "settings": {
-            "title": "Comment et quand prendre Shroombear ?",
-            "content": "<p>Prenez 8 gummies par jour, de préférence le matin avec votre petit-déjeuner. Vous pouvez les répartir : 4 le matin + 4 l'après-midi. Chaque sachet se transporte facilement !</p>"
-          }
-        },
-        "item_nWYpdF": {
-          "type": "item",
-          "settings": {
-            "title": "Quel est le goût ?",
-            "content": "<p>Nos gummies ont un délicieux goût fruité naturel, sans aucune amertume de champignon ! C'est votre \"petit plaisir santé\" du matin, fini les poudres amères.</p>"
-          }
-        },
-        "item_ULxjxY": {
-          "type": "item",
-          "settings": {
-            "title": "Y a-t-il des effets secondaires ?",
-            "content": "<p>Shroombear est 100% naturel et très bien toléré. Pas d'effets secondaires comme avec la caféine (nervosité, crash). Si vous êtes enceinte ou sous traitement, consultez votre médecin.</p>"
-          }
-        },
-        "item_qhtDxF": {
-          "type": "item",
-          "settings": {
-            "title": "Pourquoi ce prix ?",
-            "content": "<p>Nos 10 000mg de champignons concentrés représentent 3x la puissance des produits classiques. Corps fructifères bio + double extraction = qualité premium justifiée !</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_8a6PUt",
-        "item_nTtrdQ",
-        "item_nWYpdF",
-        "item_ULxjxY",
-        "item_qhtDxF"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "",
-        "team_avatar_width": 160,
-        "support_hours": "Notre service client est ouvert du Lundi au Vendredi de 9h à 18h / Samedi et Dimanche de  10h à 14h.",
-        "answer_time": "Réponse sous 12 heures.",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
     }
   },
   "order": [
-    "image_with_text_overlay_B4tMyx",
-    "logo_list_PjawWP",
-    "rich_text_axiea4",
-    "image_with_text_overlay_iYKJ8k",
-    "multi_column_GHkUL4",
-    "featured_product_mBhMJ9",
-    "timeline_chr7df",
-    "timeline_efCPpy",
-    "custom_liquid_gJMTE8",
-    "faq_4g3hAf"
+    "custom_liquid_F7m4RH",
+    "featured_product_WrnVwX"
   ]
 }
