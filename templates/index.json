@@ -82,7 +82,7 @@
         "liquid_XBzbnt": {
           "type": "liquid",
           "settings": {
-            "liquid": ""
+            "liquid": "{%- comment -%} ⬇️ Les badges affichés, dans l'ordre. Clés valides : visa, master, american_express, apple_pay, google_pay, paypal, shopify_pay, maestro, discover, bancontact, ideal {%- endcomment -%}\n{%- assign types = \"american_express,visa,master,apple_pay,google_pay\" | split: \",\" -%}\n\n<style>\n  .pay-badges{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;\n    background:transparent;margin:0;padding:0}\n  .pay-badges .pay-icon{width:40px;height:25px;display:block;border-radius:4px}\n\n  @media (max-width:480px){\n    .pay-badges{gap:6px}\n    .pay-badges .pay-icon{width:36px;height:23px}\n  }\n</style>\n\n<div class=\"pay-badges\" role=\"list\" aria-label=\"Moyens de paiement acceptés\">\n  {%- for type in types -%}\n    {{ type | strip | payment_type_svg_tag: class: 'pay-icon' }}\n  {%- endfor -%}\n</div>"
           }
         },
         "pickup_availability_zCPedD": {
