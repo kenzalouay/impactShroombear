@@ -49,10 +49,10 @@
             "text": "<p>Le savon au vrai kaki fermenté qui l'enlève au lavage.</p>"
           }
         },
-        "rating_8DTGyU": {
-          "type": "rating",
+        "liquid_qn3VAe": {
+          "type": "liquid",
           "settings": {
-            "show_empty": false
+            "liquid": "<style>\n  .tmt-price-line{display:inline-flex;align-items:center;flex-wrap:wrap;gap:10px;\n    background:transparent;\n    font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n    font-size:14.5px;line-height:1.3;color:#4A4A46}\n  .tmt-price-line .tmt-price{font-size:16px;font-weight:700;color:#1A1A1A}\n  .tmt-price-line .tmt-stock{display:inline-flex;align-items:center;gap:6px;\n    font-size:13.5px;font-weight:700;color:#157F3C}\n  .tmt-price-line .tmt-stock i{flex:none;width:9px;height:9px;border-radius:50%;\n    background:#1E9E52;font-style:normal}\n</style>\n\n<span class=\"tmt-price-line\">\n  <span>Dès <span class=\"tmt-price\">19,95&nbsp;€</span> le savon</span>\n  <span class=\"tmt-stock\"><i aria-hidden=\"true\"></i>En stock</span>\n</span>"
           }
         },
         "buy_buttons_NczyQN": {
@@ -76,7 +76,7 @@
         "text_FUbhJJ",
         "text_zXJbFr",
         "text_HPHUKA",
-        "rating_8DTGyU",
+        "liquid_qn3VAe",
         "buy_buttons_NczyQN",
         "pickup_availability_zCPedD"
       ],
